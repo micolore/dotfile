@@ -108,6 +108,8 @@ return packer.startup(function(use)
   use "lewis6991/gitsigns.nvim"                       -- Git integration
   use "sindrets/diffview.nvim" 
 
+  use "folke/which-key.nvim"
+  
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
