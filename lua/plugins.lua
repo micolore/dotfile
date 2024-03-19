@@ -88,7 +88,6 @@ return packer.startup(function(use)
   
   --use "preservim/tagbar"
   use "liuchengxu/vista.vim"
-  use "stevearc/aerial.nvim"
   
   -- Fzf
   use 'kyazdani42/nvim-tree.lua'                      -- File explorer tree
