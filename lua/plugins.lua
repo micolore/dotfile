@@ -109,7 +109,8 @@ return packer.startup(function(use)
   use "sindrets/diffview.nvim" 
 
   use "folke/which-key.nvim"
-  
+  use "nvim-pack/nvim-spectre"
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
