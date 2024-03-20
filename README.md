@@ -29,5 +29,5 @@
   1、<C-O> 临时退出插入模式（光标保持），执行单条命令又返回插入模式
 * 2024-03-20  
   1、[插入模式如何快速移动光标？](https://www.zhihu.com/question/25116829)  
-  2、使用nvim-spectre来实现搜索替换（sed使用的windows版本的）
+  2、使用nvim-spectre来实现搜索替换（sed使用的windows版本的）  
   3、使用noice来美化消息提示以及cmd模式

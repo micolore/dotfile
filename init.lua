@@ -8,7 +8,6 @@ end
 require "plugins"
 
 -- Setting files
-require "settings.theme"
 require "mappings"
 require "search"
 require "basic"
