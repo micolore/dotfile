@@ -98,6 +98,11 @@ return packer.startup(function(use)
   -- Treesitter
   use "nvim-treesitter/nvim-treesitter"               -- Treesitter configuration
 
+  -- notice 
+  use "folke/noice.nvim"
+  use "MunifTanjim/nui.nvim"
+  use "rcarriga/nvim-notify"
+
   -- search
   use "ggandor/leap.nvim"  
   use "arcticicestudio/nord-vim"

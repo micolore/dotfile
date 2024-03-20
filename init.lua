@@ -13,4 +13,5 @@ require "mappings"
 require "search"
 require "basic"
 require "lsp"
+require "theme"
 
