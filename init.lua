@@ -20,3 +20,4 @@ require "lsp.rust"
 
 -- search
 require "search"
+

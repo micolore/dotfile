@@ -79,8 +79,9 @@ return packer.startup(function(use)
   use 'folke/trouble.nvim'
   use "tpope/vim-surround"
   use "RRethy/vim-illuminate"
-  use 'simrat39/symbols-outline.nvim'
   use 'nvim-zh/colorful-winsep.nvim'
+
+  use 'hedyhli/outline.nvim'
 
   -- comment
   use "numToStr/Comment.nvim"
