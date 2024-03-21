@@ -6,57 +6,45 @@ local colorscheme = "gruvbox-material"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 
+-- clolorscheme
 if not status_ok then
   vim.notify("colorscheme " .. colorscheme .. " not found!")
   return
 end
 
 -- notice you can choice nerd font or default
-require("noice").setup(noiceNerdFontConfig)
-
-local noiceNerdFontConfig = {
-        cmdline = {
-          format = {
-            cmdline = { icon = ">" },
-            search_down = { icon = "🔍⌄" },
-            search_up = { icon = "🔍⌃" },
-            filter = { icon = "$" },
-            lua = { icon = "☾" },
-            help = { icon = "?" },
-          },
+require("noice").setup ({
+     views = {
+      cmdline_popup = {
+        position = {
+          row = 5,
+          col = "50%",
         },
-	messages = {
-   	   enabled = false, 
-    	   view = "notify", 
-           view_error = "notify", 
-    	   view_warn = "notify", 
-    	   view_history = "messages", 
-	   view_search = "virtualtext", 
+        size = {
+          width = 60,
+          height = "auto",
         },
-        notify = {
-   	   enabled = true,
-    	   view = "notify",
-	},
-        format = {
-          level = {
-            icons = {
-              error = "✖",
-              warn = "▼",
-              info = "●",
-            },
-          },
+      },
+      popupmenu = {
+        relative = "editor",
+        position = {
+          row = 8,
+          col = "50%",
         },
-        popupmenu = {
-          kind_icons = false,
+        size = {
+          width = 60,
+          height = 10,
         },
-        inc_rename = {
-          cmdline = {
-            format = {
-              IncRename = { icon = "⟳" },
-            },
-          },
+        border = {
+          style = "rounded",
+          padding = { 0, 1 },
         },
-}
+        win_options = {
+          winhighlight = { Normal = "Normal", FloatBorder = "DiagnosticInfo" },
+        },
+      },
+    },
+  })
 
 local noiceDefaultConfig = {
   cmdline = {

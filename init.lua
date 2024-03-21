@@ -9,8 +9,14 @@ require "plugins"
 
 -- Setting files
 require "mappings"
-require "search"
 require "basic"
-require "lsp"
+
+-- theme
 require "theme"
 
+-- lsp
+require "lsp.lsp"
+require "lsp.rust"
+
+-- search
+require "search"
