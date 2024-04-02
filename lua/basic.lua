@@ -330,4 +330,3 @@ require("outline").setup(
 map("n", "<leader>]", "<cmd>Outline<CR>",default_opts)
 map("i", "<C-]>", "<cmd>Outline<CR>",default_opts)
 
-

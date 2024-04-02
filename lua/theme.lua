@@ -14,50 +14,12 @@ end
 
 -- notice you can choice nerd font or default
 require("noice").setup({
-     views = {
-      cmdline_popup = {
-        position = {
-          row = 5,
-          col = "50%",
-        },
-        size = {
-          width = 60,
-          height = "auto",
-        },
-      },
-      popupmenu = {
-        relative = "editor",
-        position = {
-          row = 8,
-          col = "50%",
-        },
-        size = {
-          width = 60,
-          height = 10,
-        },
-        border = {
-          style = "rounded",
-          padding = { 0, 1 },
-        },
-        win_options = {
-          winhighlight = { Normal = "Normal", FloatBorder = "DiagnosticInfo" },
-        },
-      },
-    },
- })
-
-local noiceDefaultConfig = {
   cmdline = {
     enabled = true, -- enables the Noice cmdline UI
     view = "cmdline_popup", -- view for rendering the cmdline. Change to `cmdline` to get a classic cmdline at the bottom
     opts = {}, -- global options for the cmdline. See section on views
     ---@type table<string, CmdlineFormat>
     format = {
-      -- conceal: (default=true) This will hide the text in the cmdline that matches the pattern.
-      -- view: (default is cmdline view)
-      -- opts: any options passed to the view
-      -- icon_hl_group: optional hl_group for the icon
-      -- title: set to anything or empty string to hide
       cmdline = { pattern = "^:", icon = "", lang = "vim" },
       search_down = { kind = "search", pattern = "^/", icon = " ", lang = "regex" },
       search_up = { kind = "search", pattern = "^%?", icon = " ", lang = "regex" },
@@ -243,7 +205,7 @@ local noiceDefaultConfig = {
   status = {}, --- @see section on statusline components
   ---@type NoiceFormatOptions
   format = {}, --- @see section on formatting
-}
+})
 
 -- message notify
 require("notify").setup({
@@ -273,3 +235,4 @@ require("notify").setup({
 --vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
 
 
+require('qfview').setup()
