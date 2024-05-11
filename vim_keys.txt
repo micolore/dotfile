@@ -1,0 +1,677 @@
+
+"vim_keys.txt" 
+"vim_keys.txt" [unix] 0L, 0B
+
+
+x  <Space>sÞ   * <Nop>
+	Last set from Lua
+x  <Space>Þ    * <Nop>
+	Last set from Lua
+x  <Space>     * <Cmd>lua require("which-key").show(" ", {mode = "v", auto = true})<CR>
+	Last set from Lua
+n  <Space>aÞ   * <Nop>
+	Last set from Lua
+n  <Space>wÞ   * <Nop>
+	Last set from Lua
+n  <Space>Þ    * <Nop>
+	Last set from Lua
+n  <Space>     * <Cmd>lua require("which-key").show(" ", {mode = "n", auto = true})<CR>
+	Last set from Lua
+n  <Space>]    * <Cmd>Outline<CR>
+	Last set from Lua
+n  <Space>sp   * <Cmd>lua require("spectre").open_file_search({select_word=true})<CR>
+                 Search on current file
+	Last set from Lua
+v  <Space>sw   * <Esc><Cmd>lua require("spectre").open_visual()<CR>
+                 Search current word
+	Last set from Lua
+n  <Space>sw   * <Cmd>lua require("spectre").open_visual({select_word=true})<CR>
+                 Search current word
+	Last set from Lua
+n  <Space>S    * <Cmd>lua require("spectre").toggle()<CR>
+                 Toggle Spectre
+	Last set from Lua
+n  <Space>d    * <Cmd>lua vim.diagnostic.setloclist()<CR>
+	Last set from Lua
+n  <Space>wl     :FocusSplitRight<CR>
+	Last set from Lua
+n  <Space>wu     :FocusSplitUp<CR>
+	Last set from Lua
+n  <Space>wd     :FocusSplitDown<CR>
+	Last set from Lua
+n  <Space>wh     :FocusSplitLeft<CR>
+	Last set from Lua
+n  <Space>r    * :NvimTreeToggle<CR>
+	Last set from Lua
+n  <Space>j    * <C-W>j
+	Last set from Lua
+n  <Space>k    * <C-W>k
+	Last set from Lua
+n  <Space>l    * <C-W>l
+	Last set from Lua
+n  <Space>h    * <C-W>h
+	Last set from Lua
+n  <Space>q    * :q<CR>
+	Last set from Lua
+n  <Space>s    * <Esc>:w<CR>
+	Last set from Lua
+n  <Space>aa   * ggVG<C-$>
+	Last set from Lua
+n  <Space>n    * <Cmd>enew<CR>
+	Last set from Lua
+n  <Space>u    * :PackerSync<CR>
+	Last set from Lua
+n  !iÞ         * <Nop>
+	Last set from Lua
+n  !aÞ         * <Nop>
+	Last set from Lua
+n  !Þ          * <Nop>
+	Last set from Lua
+n  !           * <Cmd>lua require("which-key").show("!", {mode = "n", auto = true})<CR>
+	Last set from Lua
+x  "           * <Cmd>lua require("which-key").show("\"", {mode = "v", auto = true})<CR>
+	Last set from Lua
+n  "           * <Cmd>lua require("which-key").show("\"", {mode = "n", auto = true})<CR>
+	Last set from Lua
+x  #           * y?\V<C-R>"<CR>
+                 Nvim builtin
+	Last set from Lua
+o  %             <Plug>(MatchitOperationForward)
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 73
+x  %             <Plug>(MatchitVisualForward)
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 71
+n  %             <Plug>(MatchitNormalForward)
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 69
+n  &           * :&&<CR>
+                 Nvim builtin
+	Last set from Lua
+n  '           * <Cmd>lua require("which-key").show("'", {mode = "n", auto = true})<CR>
+	Last set from Lua
+x  *           * y/\V<C-R>"<CR>
+                 Nvim builtin
+	Last set from Lua
+n  1gÞ         * <Nop>
+	Last set from Lua
+n  1gD         * <Lua 104: C:\tools\neovim\nvim-win64\share\nvim\runtime/lua/vim/lsp/buf.lua:84>
+	Last set from Lua
+n  <iÞ         * <Nop>
+	Last set from Lua
+n  <aÞ         * <Nop>
+	Last set from Lua
+n  <Þ          * <Nop>
+	Last set from Lua
+n  <           * <Cmd>lua require("which-key").show("<", {mode = "n", auto = true})<CR>
+	Last set from Lua
+n  >iÞ         * <Nop>
+	Last set from Lua
+n  >aÞ         * <Nop>
+	Last set from Lua
+n  >Þ          * <Nop>
+	Last set from Lua
+n  >           * <Cmd>lua require("which-key").show(">", {mode = "n", auto = true})<CR>
+	Last set from Lua
+o  F           * <Lua 254: ~\AppData\Local\nvim-data\site\pack\packer\start\flit.nvim/lua/flit.lua:217>
+	Last set from Lua
+x  F           * <Lua 250: ~\AppData\Local\nvim-data\site\pack\packer\start\flit.nvim/lua/flit.lua:217>
+	Last set from Lua
+n  F           * <Lua 239: ~\AppData\Local\nvim-data\site\pack\packer\start\flit.nvim/lua/flit.lua:217>
+	Last set from Lua
+n  K           * <Lua 93: C:\tools\neovim\nvim-win64\share\nvim\runtime/lua/vim/lsp/buf.lua:40>
+	Last set from Lua
+x  S             <Plug>VSurround
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-surround\plugin\surround.vim line 619
+o  T           * <Lua 256: ~\AppData\Local\nvim-data\site\pack\packer\start\flit.nvim/lua/flit.lua:217>
+	Last set from Lua
+x  T           * <Lua 252: ~\AppData\Local\nvim-data\site\pack\packer\start\flit.nvim/lua/flit.lua:217>
+	Last set from Lua
+n  T           * <Lua 248: ~\AppData\Local\nvim-data\site\pack\packer\start\flit.nvim/lua/flit.lua:217>
+	Last set from Lua
+n  Y           * y$
+	Last set from Lua
+x  [Þ          * <Nop>
+	Last set from Lua
+x  [           * <Cmd>lua require("which-key").show("[", {mode = "v", auto = true})<CR>
+	Last set from Lua
+n  [Þ          * <Nop>
+	Last set from Lua
+n  [           * <Cmd>lua require("which-key").show("[", {mode = "n", auto = true})<CR>
+	Last set from Lua
+o  [%            <Plug>(MatchitOperationMultiBackward)
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 81
+x  [%            <Plug>(MatchitVisualMultiBackward)
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 79
+n  [%            <Plug>(MatchitNormalMultiBackward)
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 77
+o  [i          * <Cmd>lua MiniIndentscope.operator('top')<CR>
+                 Go to indent scope top
+	Last set from Lua
+x  [i          * <Cmd>lua MiniIndentscope.operator('top')<CR>
+                 Go to indent scope top
+	Last set from Lua
+n  [i          * <Cmd>lua MiniIndentscope.operator('top', true)<CR>
+                 Go to indent scope top
+	Last set from Lua
+x  \\Þ         * <Nop>
+	Last set from Lua
+x  \Þ          * <Nop>
+	Last set from Lua
+x  \           * <Cmd>lua require("which-key").show("\\", {mode = "v", auto = true})<CR>
+	Last set from Lua
+n  \\gÞ        * <Nop>
+	Last set from Lua
+n  \\Þ         * <Nop>
+	Last set from Lua
+n  \Þ          * <Nop>
+	Last set from Lua
+n  \           * <Cmd>lua require("which-key").show("\\", {mode = "n", auto = true})<CR>
+	Last set from Lua
+x  \\c           <Plug>(VM-Visual-Cursors)
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\maps.vim line 18
+n  \\gS          <Plug>(VM-Reselect-Last)
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\maps.vim line 18
+n  \\/           <Plug>(VM-Start-Regex-Search)
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\maps.vim line 18
+n  \\\           <Plug>(VM-Add-Cursor-At-Pos)
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\maps.vim line 18
+x  \\a           <Plug>(VM-Visual-Add)
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\maps.vim line 18
+x  \\f           <Plug>(VM-Visual-Find)
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\maps.vim line 18
+x  \\/           <Plug>(VM-Visual-Regex)
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\maps.vim line 18
+x  \\A           <Plug>(VM-Visual-All)
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\maps.vim line 18
+n  \\A           <Plug>(VM-Select-All)
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\maps.vim line 18
+x  ]Þ          * <Nop>
+	Last set from Lua
+x  ]           * <Cmd>lua require("which-key").show("]", {mode = "v", auto = true})<CR>
+	Last set from Lua
+n  ]Þ          * <Nop>
+	Last set from Lua
+n  ]           * <Cmd>lua require("which-key").show("]", {mode = "n", auto = true})<CR>
+	Last set from Lua
+o  ]%            <Plug>(MatchitOperationMultiForward)
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 82
+x  ]%            <Plug>(MatchitVisualMultiForward)
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 80
+n  ]%            <Plug>(MatchitNormalMultiForward)
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 78
+o  ]i          * <Cmd>lua MiniIndentscope.operator('bottom')<CR>
+                 Go to indent scope bottom
+	Last set from Lua
+x  ]i          * <Cmd>lua MiniIndentscope.operator('bottom')<CR>
+                 Go to indent scope bottom
+	Last set from Lua
+n  ]i          * <Cmd>lua MiniIndentscope.operator('bottom', true)<CR>
+                 Go to indent scope bottom
+	Last set from Lua
+n  `           * <Cmd>lua require("which-key").show("`", {mode = "n", auto = true})<CR>
+	Last set from Lua
+x  a%            <Plug>(MatchitVisualTextObject)
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 85
+o  ai          * <Cmd>lua MiniIndentscope.textobject(true)<CR>
+                 Object scope with border
+	Last set from Lua
+x  ai          * <Cmd>lua MiniIndentscope.textobject(true)<CR>
+                 Object scope with border
+	Last set from Lua
+n  bd          * :bdelete<CR>
+	Last set from Lua
+n  bb          * :bprevious<CR>
+	Last set from Lua
+n  bn          * :bnext<CR>
+	Last set from Lua
+n  bu          * :enew<CR>
+	Last set from Lua
+n  caÞ         * <Nop>
+	Last set from Lua
+n  ciÞ         * <Nop>
+	Last set from Lua
+n  cÞ          * <Nop>
+	Last set from Lua
+n  c           * <Cmd>lua require("which-key").show("c", {mode = "n", auto = true})<CR>
+	Last set from Lua
+n  cS            <Plug>CSurround
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-surround\plugin\surround.vim line 613
+n  cs            <Plug>Csurround
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-surround\plugin\surround.vim line 612
+n  diÞ         * <Nop>
+	Last set from Lua
+n  daÞ         * <Nop>
+	Last set from Lua
+n  dÞ          * <Nop>
+	Last set from Lua
+n  d           * <Cmd>lua require("which-key").show("d", {mode = "n", auto = true})<CR>
+	Last set from Lua
+n  ds            <Plug>Dsurround
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-surround\plugin\surround.vim line 611
+o  f           * <Lua 253: ~\AppData\Local\nvim-data\site\pack\packer\start\flit.nvim/lua/flit.lua:217>
+	Last set from Lua
+x  f           * <Lua 249: ~\AppData\Local\nvim-data\site\pack\packer\start\flit.nvim/lua/flit.lua:217>
+	Last set from Lua
+n  f           * <Lua 238: ~\AppData\Local\nvim-data\site\pack\packer\start\flit.nvim/lua/flit.lua:217>
+	Last set from Lua
+n  fh          * <Cmd>lua require('telescope.builtin').help_tags()<CR>
+	Last set from Lua
+n  fl          * <Cmd>lua require('telescope.builtin').oldfiles()<CR>
+	Last set from Lua
+n  fb          * <Cmd>lua require('telescope.builtin').buffers()<CR>
+	Last set from Lua
+n  fg          * <Cmd>lua require('telescope.builtin').live_grep()<CR>
+	Last set from Lua
+n  ff          * <Cmd>lua require('telescope.builtin').find_files() prompt_prefix=🔍<CR>
+	Last set from Lua
+x  gÞ          * <Nop>
+	Last set from Lua
+x  g           * <Cmd>lua require("which-key").show("g", {mode = "v", auto = true})<CR>
+	Last set from Lua
+n  g~iÞ        * <Nop>
+	Last set from Lua
+n  g~aÞ        * <Nop>
+	Last set from Lua
+n  g~Þ         * <Nop>
+	Last set from Lua
+n  gUiÞ        * <Nop>
+	Last set from Lua
+n  gUaÞ        * <Nop>
+	Last set from Lua
+n  gUÞ         * <Nop>
+	Last set from Lua
+n  guiÞ        * <Nop>
+	Last set from Lua
+n  guaÞ        * <Nop>
+	Last set from Lua
+n  guÞ         * <Nop>
+	Last set from Lua
+n  gÞ          * <Nop>
+	Last set from Lua
+n  g           * <Cmd>lua require("which-key").show("g", {mode = "n", auto = true})<CR>
+	Last set from Lua
+x  gS            <Plug>VgSurround
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-surround\plugin\surround.vim line 620
+o  g%            <Plug>(MatchitOperationBackward)
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 74
+x  g%            <Plug>(MatchitVisualBackward)
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 72
+n  g%            <Plug>(MatchitNormalBackward)
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 70
+n  gcA         * <Lua 136: ~\AppData\Local\nvim-data\site\pack\packer\start\Comment.nvim/lua/Comment/api.lua:218>
+                 Comment insert end of line
+	Last set from Lua
+n  gcO         * <Lua 135: ~\AppData\Local\nvim-data\site\pack\packer\start\Comment.nvim/lua/Comment/api.lua:179>
+                 Comment insert above
+	Last set from Lua
+n  gco         * <Lua 134: ~\AppData\Local\nvim-data\site\pack\packer\start\Comment.nvim/lua/Comment/api.lua:182>
+                 Comment insert below
+	Last set from Lua
+x  gb          * <Plug>(comment_toggle_blockwise_visual)
+                 Comment toggle blockwise (visual)
+	Last set from Lua
+x  gc            <Plug>kommentary_visual_default<C-C>
+	Last set from Lua line 2
+n  gbc         * <Lua 131: ~\AppData\Local\nvim-data\site\pack\packer\start\Comment.nvim/lua/Comment/init.lua:107>
+                 Comment toggle current block
+	Last set from Lua
+n  gcc           <Plug>kommentary_line_default
+	Last set from Lua line 2
+n  gb          * <Plug>(comment_toggle_blockwise)
+                 Comment toggle blockwise
+	Last set from Lua
+n  gc            <Plug>kommentary_motion_default
+	Last set from Lua line 2
+n  g]          * <Lua 110: C:\tools\neovim\nvim-win64\share\nvim\runtime/lua/vim/diagnostic.lua:853>
+	Last set from Lua
+n  g[          * <Lua 109: C:\tools\neovim\nvim-win64\share\nvim\runtime/lua/vim/diagnostic.lua:807>
+	Last set from Lua
+n  gd          * <Lua 108: C:\tools\neovim\nvim-win64\share\nvim\runtime/lua/vim/lsp/buf.lua:74>
+	Last set from Lua
+n  gW          * <Lua 107: C:\tools\neovim\nvim-win64\share\nvim\runtime/lua/vim/lsp/buf.lua:553>
+	Last set from Lua
+n  g0          * <Lua 106: C:\tools\neovim\nvim-win64\share\nvim\runtime/lua/vim/lsp/buf.lua:410>
+	Last set from Lua
+n  gr          * <Lua 105: C:\tools\neovim\nvim-win64\share\nvim\runtime/lua/vim/lsp/buf.lua:397>
+	Last set from Lua
+n  gi          * <Lua 102: C:\tools\neovim\nvim-win64\share\nvim\runtime/lua/vim/lsp/buf.lua:94>
+	Last set from Lua
+o  ii          * <Cmd>lua MiniIndentscope.textobject(false)<CR>
+                 Object scope
+	Last set from Lua
+x  ii          * <Cmd>lua MiniIndentscope.textobject(false)<CR>
+                 Object scope
+	Last set from Lua
+o  t           * <Lua 255: ~\AppData\Local\nvim-data\site\pack\packer\start\flit.nvim/lua/flit.lua:217>
+	Last set from Lua
+x  t           * <Lua 251: ~\AppData\Local\nvim-data\site\pack\packer\start\flit.nvim/lua/flit.lua:217>
+	Last set from Lua
+n  t           * <Lua 247: ~\AppData\Local\nvim-data\site\pack\packer\start\flit.nvim/lua/flit.lua:217>
+	Last set from Lua
+n  viÞ         * <Nop>
+	Last set from Lua
+n  vaÞ         * <Nop>
+	Last set from Lua
+n  vÞ          * <Nop>
+	Last set from Lua
+n  v           * <Cmd>lua require("which-key").show("v", {mode = "n", auto = true})<CR>
+	Last set from Lua
+n  yaÞ         * <Nop>
+	Last set from Lua
+n  yiÞ         * <Nop>
+	Last set from Lua
+n  yÞ          * <Nop>
+	Last set from Lua
+n  y           * <Cmd>lua require("which-key").show("y", {mode = "n", auto = true})<CR>
+	Last set from Lua
+n  ySS           <Plug>YSsurround
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-surround\plugin\surround.vim line 618
+n  ySs           <Plug>YSsurround
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-surround\plugin\surround.vim line 617
+n  yss           <Plug>Yssurround
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-surround\plugin\surround.vim line 616
+n  yS            <Plug>YSurround
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-surround\plugin\surround.vim line 615
+n  ys            <Plug>Ysurround
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-surround\plugin\surround.vim line 614
+v  y           * ygv<Esc>
+	Last set from Lua
+n  zfiÞ        * <Nop>
+	Last set from Lua
+n  zfaÞ        * <Nop>
+	Last set from Lua
+n  zfÞ         * <Nop>
+	Last set from Lua
+n  zÞ          * <Nop>
+	Last set from Lua
+n  z           * <Cmd>lua require("which-key").show("z", {mode = "n", auto = true})<CR>
+	Last set from Lua
+n  <C-W>Þ      * <Nop>
+	Last set from Lua
+n  <C-W>       * <Cmd>lua require("which-key").show("\23", {mode = "n", auto = true})<CR>
+	Last set from Lua
+n  <C-Down>      <Plug>(VM-Add-Cursor-Down)
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\maps.vim line 18
+x  <C-N>         <Plug>(VM-Find-Subword-Under)
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\maps.vim line 18
+n  <C-Up>        <Plug>(VM-Add-Cursor-Up)
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\maps.vim line 18
+n  <S-Right>     <Plug>(VM-Select-l)
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\maps.vim line 18
+n  <S-Left>      <Plug>(VM-Select-h)
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\maps.vim line 18
+n  <C-N>         <Plug>(VM-Find-Under)
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\maps.vim line 18
+n  <Plug>(VM-Select-BBW) * :<C-U>call vm#commands#motion('BBW', v:count1, 1, 0)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 37
+n  <Plug>(VM-Select-gE) * :<C-U>call vm#commands#motion('gE', v:count1, 1, 0)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 37
+n  <Plug>(VM-Select-ge) * :<C-U>call vm#commands#motion('ge', v:count1, 1, 0)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 37
+n  <Plug>(VM-Select-E) * :<C-U>call vm#commands#motion('E', v:count1, 1, 0)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 37
+n  <Plug>(VM-Select-e) * :<C-U>call vm#commands#motion('e', v:count1, 1, 0)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 37
+n  <Plug>(VM-Select-B) * :<C-U>call vm#commands#motion('B', v:count1, 1, 0)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 37
+n  <Plug>(VM-Select-b) * :<C-U>call vm#commands#motion('b', v:count1, 1, 0)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 37
+n  <Plug>(VM-Select-W) * :<C-U>call vm#commands#motion('W', v:count1, 1, 0)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 37
+n  <Plug>(VM-Select-w) * :<C-U>call vm#commands#motion('w', v:count1, 1, 0)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 37
+n  <Plug>(VM-Select-l) * :<C-U>call vm#commands#motion('l', v:count1, 1, 0)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 37
+n  <Plug>(VM-Select-k) * :<C-U>call vm#commands#motion('k', v:count1, 1, 0)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 37
+n  <Plug>(VM-Select-j) * :<C-U>call vm#commands#motion('j', v:count1, 1, 0)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 37
+n  <Plug>(VM-Select-h) * :<C-U>call vm#commands#motion('h', v:count1, 1, 0)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 37
+n  <Plug>(VM-Mouse-Column) * :call vm#commands#mouse_column()<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 33
+n  <Plug>(VM-Mouse-Word)   <Plug>(VM-Left-Mouse)<Plug>(VM-Find-Under)
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 32
+n  <Plug>(VM-Mouse-Cursor)   <Plug>(VM-Left-Mouse)<Plug>(VM-Add-Cursor-At-Pos)
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 31
+n  <Plug>(VM-Left-Mouse) * <LeftMouse>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 30
+x  <Plug>(VM-Visual-Regex) * :call vm#commands#find_by_regex(2)<CR>:call feedkeys('/', 'n')<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 28
+n  <Plug>(VM-Slash-Search) * @=vm#commands#find_by_regex(3)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 27
+n  <Plug>(VM-Start-Regex-Search) * @=vm#commands#find_by_regex(1)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 26
+x  <Plug>(VM-Find-Subword-Under) * <SNR>49_Visual('under')
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 24
+n  <Plug>(VM-Find-Under) * :<C-U>call vm#commands#ctrln(v:count1)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 23
+x  <Plug>(VM-Visual-Reduce) * :<C-U>call vm#visual#reduce()<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 21
+x  <Plug>(VM-Visual-Add) * <Esc>:call vm#commands#visual_add()<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 20
+x  <Plug>(VM-Visual-Cursors) * <Esc>:call vm#commands#visual_cursors()<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 19
+x  <Plug>(VM-Visual-All) * <SNR>49_Visual('all')
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 18
+n  <Plug>(VM-Select-All) * :call vm#commands#find_all(0, 1)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 17
+n  <Plug>(VM-Reselect-Last) * :call vm#commands#reselect_last()<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 16
+n  <Plug>(VM-Select-Cursor-Up) * :<C-U>call vm#commands#add_cursor_up(1, v:count1)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 14
+n  <Plug>(VM-Select-Cursor-Down) * :<C-U>call vm#commands#add_cursor_down(1, v:count1)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 13
+n  <Plug>(VM-Add-Cursor-Up) * :<C-U>call vm#commands#add_cursor_up(0, v:count1)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 12
+n  <Plug>(VM-Add-Cursor-Down) * :<C-U>call vm#commands#add_cursor_down(0, v:count1)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 11
+n  <Plug>(VM-Add-Cursor-At-Word) * :call vm#commands#add_cursor_at_word(1, 1)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 10
+n  <Plug>(VM-Add-Cursor-At-Pos) * :call vm#commands#add_cursor_at_pos(0)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 9
+x  <Plug>(VM-Visual-Find)   vm#operators#find(1, 1)
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim line 7
+v  <Plug>VgSurround * :<C-U>call <SNR>47_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-surround\plugin\surround.vim line 606
+v  <Plug>VSurround * :<C-U>call <SNR>47_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-surround\plugin\surround.vim line 605
+n  <Plug>YSurround * <SNR>47_opfunc2('setup')
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-surround\plugin\surround.vim line 604
+n  <Plug>Ysurround * <SNR>47_opfunc('setup')
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-surround\plugin\surround.vim line 603
+n  <Plug>YSsurround * <SNR>47_opfunc2('setup').'_'
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-surround\plugin\surround.vim line 602
+n  <Plug>Yssurround * '^'.v:count1.<SNR>47_opfunc('setup').'g_'
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-surround\plugin\surround.vim line 601
+n  <Plug>CSurround * :<C-U>call <SNR>47_changesurround(1)<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-surround\plugin\surround.vim line 600
+n  <Plug>Csurround * :<C-U>call <SNR>47_changesurround()<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-surround\plugin\surround.vim line 599
+n  <Plug>Dsurround * :<C-U>call <SNR>47_dosurround(<SNR>47_inputtarget())<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-surround\plugin\surround.vim line 598
+n  <Plug>SurroundRepeat * .
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\vim-surround\plugin\surround.vim line 597
+x  <M-i>       * <Lua 371: ~\AppData\Local\nvim-data\site\pack\packer\start\vim-illuminate/lua/illuminate.lua:292>
+	Last set from Lua line 45
+o  <M-i>       * <Lua 370: ~\AppData\Local\nvim-data\site\pack\packer\start\vim-illuminate/lua/illuminate.lua:292>
+	Last set from Lua line 45
+n  <M-p>       * <Lua 369: ~\AppData\Local\nvim-data\site\pack\packer\start\vim-illuminate/lua/illuminate.lua:285>
+                 Move to previous reference
+	Last set from Lua line 45
+n  <M-n>       * <Lua 123: ~\AppData\Local\nvim-data\site\pack\packer\start\vim-illuminate/lua/illuminate.lua:278>
+                 Move to next reference
+	Last set from Lua line 45
+n  <Plug>PlenaryTestFile * :lua require('plenary.test_harness').test_file(vim.fn.expand("%:p"))<CR>
+	Last set from ~\AppData\Local\nvim-data\site\pack\packer\start\plenary.nvim\plugin\plenary.vim line 9
+s  <Plug>luasnip-jump-prev * <Lua 327: ~\AppData\Local\nvim-data\site\pack\packer\start\LuaSnip\plugin\luasnip.lua:57>
+                 LuaSnip: Jump to the previous node
+	Last set from Lua
+s  <Plug>luasnip-jump-next * <Lua 326: ~\AppData\Local\nvim-data\site\pack\packer\start\LuaSnip\plugin\luasnip.lua:54>
+                 LuaSnip: Jump to the next node
+	Last set from Lua
+s  <Plug>luasnip-prev-choice * <Lua 325: ~\AppData\Local\nvim-data\site\pack\packer\start\LuaSnip\plugin\luasnip.lua:51>
+                 LuaSnip: Change to the previous choice from the choiceNode
+	Last set from Lua
+s  <Plug>luasnip-next-choice * <Lua 324: ~\AppData\Local\nvim-data\site\pack\packer\start\LuaSnip\plugin\luasnip.lua:48>
+                 LuaSnip: Change to the next choice from the choiceNode
+	Last set from Lua
+s  <Plug>luasnip-expand-snippet * <Lua 323: ~\AppData\Local\nvim-data\site\pack\packer\start\LuaSnip\plugin\luasnip.lua:45>
+                 LuaSnip: Expand the current snippet
+	Last set from Lua
+s  <Plug>luasnip-expand-or-jump * <Lua 322: ~\AppData\Local\nvim-data\site\pack\packer\start\LuaSnip\plugin\luasnip.lua:42>
+                 LuaSnip: Expand or jump in the current snippet
+	Last set from Lua
+   <Plug>luasnip-expand-repeat * <Lua 320: ~\AppData\Local\nvim-data\site\pack\packer\start\LuaSnip\plugin\luasnip.lua:35>
+                 LuaSnip: Repeat last node expansion
+	Last set from Lua
+n  <Plug>luasnip-delete-check * <Lua 318: ~\AppData\Local\nvim-data\site\pack\packer\start\LuaSnip\plugin\luasnip.lua:28>
+                 LuaSnip: Removes current snippet from jumplist
+	Last set from Lua
+o  <Plug>(leap-backward-x) * <Lua 311: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:81>
+	Last set from Lua
+x  <Plug>(leap-backward-x) * <Lua 310: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:81>
+	Last set from Lua
+n  <Plug>(leap-backward-x) * <Lua 309: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:81>
+	Last set from Lua
+o  <Plug>(leap-forward-x) * <Lua 308: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:76>
+	Last set from Lua
+x  <Plug>(leap-forward-x) * <Lua 307: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:76>
+	Last set from Lua
+n  <Plug>(leap-forward-x) * <Lua 306: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:76>
+	Last set from Lua
+o  <Plug>(leap-cross-window) * <Plug>(leap-from-window)
+	Last set from Lua
+x  <Plug>(leap-cross-window) * <Plug>(leap-from-window)
+	Last set from Lua
+n  <Plug>(leap-cross-window) * <Plug>(leap-from-window)
+	Last set from Lua
+o  <Plug>(leap-backward-till) * <Lua 305: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:60>
+	Last set from Lua
+x  <Plug>(leap-backward-till) * <Lua 304: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:60>
+	Last set from Lua
+n  <Plug>(leap-backward-till) * <Lua 303: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:60>
+	Last set from Lua
+o  <Plug>(leap-backward-to) * <Lua 302: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:55>
+	Last set from Lua
+x  <Plug>(leap-backward-to) * <Lua 301: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:55>
+	Last set from Lua
+n  <Plug>(leap-backward-to) * <Lua 300: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:55>
+	Last set from Lua
+o  <Plug>(leap-forward-till) * <Lua 299: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:50>
+	Last set from Lua
+x  <Plug>(leap-forward-till) * <Lua 298: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:50>
+	Last set from Lua
+n  <Plug>(leap-forward-till) * <Lua 297: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:50>
+	Last set from Lua
+o  <Plug>(leap-forward-to) * <Lua 296: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:41>
+	Last set from Lua
+x  <Plug>(leap-forward-to) * <Lua 295: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:41>
+	Last set from Lua
+n  <Plug>(leap-forward-to) * <Lua 294: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:36>
+	Last set from Lua
+o  <Plug>(leap) * <Lua 293: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:27>
+	Last set from Lua
+x  <Plug>(leap) * <Lua 292: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:27>
+	Last set from Lua
+n  <Plug>(leap) * <Lua 291: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:27>
+	Last set from Lua
+o  <Plug>(leap-from-window) * <Lua 290: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:16>
+	Last set from Lua
+x  <Plug>(leap-from-window) * <Lua 289: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:16>
+	Last set from Lua
+n  <Plug>(leap-from-window) * <Lua 288: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:16>
+	Last set from Lua
+o  <Plug>(leap-backward) * <Lua 287: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:11>
+	Last set from Lua
+x  <Plug>(leap-backward) * <Lua 286: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:11>
+	Last set from Lua
+n  <Plug>(leap-backward) * <Lua 285: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:11>
+	Last set from Lua
+o  <Plug>(leap-forward) * <Lua 284: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:6>
+	Last set from Lua
+x  <Plug>(leap-forward) * <Lua 274: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:6>
+	Last set from Lua
+n  <Plug>(leap-forward) * <Lua 112: ~\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua:6>
+	Last set from Lua
+x  <Plug>kommentary_visual_singles * <Cmd>call v:lua.kommentary.go(2,"kommentary_visual_singles")<CR>
+	Last set from Lua line 2
+n  <Plug>kommentary_motion_singles * v:lua.kommentary.go(3,"kommentary_motion_singles")
+	Last set from Lua line 2
+x  <Plug>kommentary_visual_decrease * <Cmd>call v:lua.kommentary.go(2,"kommentary_visual_decrease")<CR>
+	Last set from Lua line 2
+n  <Plug>kommentary_line_decrease * v:lua.kommentary.go(1,"kommentary_line_decrease")
+	Last set from Lua line 2
+n  <Plug>kommentary_motion_decrease * v:lua.kommentary.go(3,"kommentary_motion_decrease")
+	Last set from Lua line 2
+x  <Plug>kommentary_visual_increase * <Cmd>call v:lua.kommentary.go(2,"kommentary_visual_increase")<CR>
+	Last set from Lua line 2
+n  <Plug>kommentary_line_increase * v:lua.kommentary.go(1,"kommentary_line_increase")
+	Last set from Lua line 2
+n  <Plug>kommentary_motion_increase * v:lua.kommentary.go(3,"kommentary_motion_increase")
+	Last set from Lua line 2
+x  <Plug>kommentary_visual_default * <Cmd>call v:lua.kommentary.go(2,"kommentary_visual_default")<CR>
+	Last set from Lua line 2
+n  <Plug>kommentary_line_default * v:lua.kommentary.go(1,"kommentary_line_default")
+	Last set from Lua line 2
+n  <Plug>kommentary_motion_default * v:lua.kommentary.go(3,"kommentary_motion_default")
+	Last set from Lua line 2
+x  <Plug>(comment_toggle_blockwise_visual) * <Esc><Cmd>lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())<CR>
+                 Comment toggle blockwise (visual)
+	Last set from Lua
+x  <Plug>(comment_toggle_linewise_visual) * <Esc><Cmd>lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())<CR>
+                 Comment toggle linewise (visual)
+	Last set from Lua
+n  <Plug>(comment_toggle_blockwise_count) * <Lua 273: ~\AppData\Local\nvim-data\site\pack\packer\start\Comment.nvim/lua/Comment/api.lua:246>
+                 Comment toggle blockwise with count
+	Last set from Lua
+n  <Plug>(comment_toggle_linewise_count) * <Lua 272: ~\AppData\Local\nvim-data\site\pack\packer\start\Comment.nvim/lua/Comment/api.lua:246>
+                 Comment toggle linewise with count
+	Last set from Lua
+n  <Plug>(comment_toggle_blockwise_current) * <Lua 271: ~\AppData\Local\nvim-data\site\pack\packer\start\Comment.nvim/lua/Comment/api.lua:246>
+                 Comment toggle current block
+	Last set from Lua
+n  <Plug>(comment_toggle_linewise_current) * <Lua 270: ~\AppData\Local\nvim-data\site\pack\packer\start\Comment.nvim/lua/Comment/api.lua:246>
+                 Comment toggle current line
+	Last set from Lua
+n  <Plug>(comment_toggle_blockwise) * <Lua 269: ~\AppData\Local\nvim-data\site\pack\packer\start\Comment.nvim/lua/Comment/api.lua:246>
+                 Comment toggle blockwise
+	Last set from Lua
+n  <Plug>(comment_toggle_linewise) * <Lua 257: ~\AppData\Local\nvim-data\site\pack\packer\start\Comment.nvim/lua/Comment/api.lua:246>
+                 Comment toggle linewise
+	Last set from Lua
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 66
+o  <Plug>(MatchitOperationMultiForward) * :<C-U>call matchit#MultiMatch("W",  "o")<CR>
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 63
+o  <Plug>(MatchitOperationMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "o")<CR>
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 62
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 61
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 60
+n  <Plug>(MatchitNormalMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 59
+n  <Plug>(MatchitNormalMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 58
+o  <Plug>(MatchitOperationBackward) * :<C-U>call matchit#Match_wrapper('',0,'o')<CR>
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 55
+o  <Plug>(MatchitOperationForward) * :<C-U>call matchit#Match_wrapper('',1,'o')<CR>
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 54
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 53
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 51
+n  <Plug>(MatchitNormalBackward) * :<C-U>call matchit#Match_wrapper('',0,'n')<CR>
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 50
+n  <Plug>(MatchitNormalForward) * :<C-U>call matchit#Match_wrapper('',1,'n')<CR>
+	Last set from C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim line 49
+n  <C-K>       * <Lua 103: C:\tools\neovim\nvim-win64\share\nvim\runtime/lua/vim/lsp/buf.lua:101>
+	Last set from Lua
+n  <C-]>       * <Lua 92: C:\tools\neovim\nvim-win64\share\nvim\runtime/lua/vim/lsp/buf.lua:74>
+	Last set from Lua
+n  <M-m>         :NvimTreeToggle<CR>
+	Last set from Lua
+n  <C-L>       * <Cmd>nohlsearch|diffupdate|normal! <C-L><CR>
+                 Nvim builtin
+	Last set from Lua
+"vim_keys.txt" 
+"vim_keys.txt" [noeol][unix] 653L, 36864B
