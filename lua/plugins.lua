@@ -63,7 +63,7 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-cmdline"                           -- Cmp source for vim's cmdline
   use "saadparwaiz1/cmp_luasnip"                      -- Luasnip completion source
   use "hrsh7th/cmp-vsnip"
-  
+
   -- Snippets
   use "L3MON4D3/LuaSnip"                              -- Snippet engine
   use "rafamadriz/friendly-snippets"                  -- Preconfigured snippets
@@ -105,9 +105,10 @@ return packer.startup(function(use)
   use "rcarriga/nvim-notify"
 
   -- search
-  use "ggandor/leap.nvim"  
   use "arcticicestudio/nord-vim"
   use "ethanholz/nvim-lastplace"
+  use "ggandor/leap.nvim"
+  use "ggandor/flit.nvim"
  
   -- git
   use "NeogitOrg/neogit"
@@ -115,7 +116,7 @@ return packer.startup(function(use)
   use "sindrets/diffview.nvim" 
 
   use "folke/which-key.nvim"
-  use "nvim-pack/nvim-spectre"
+  use "nvim-pack/nvim-spectre" --搜索替换
   use "ashfinal/qfview.nvim"
 
   if PACKER_BOOTSTRAP then

@@ -31,3 +31,25 @@
   1、[插入模式如何快速移动光标？](https://www.zhihu.com/question/25116829)  
   2、使用nvim-spectre来实现搜索替换（sed使用的windows版本的）  
   3、使用noice来美化消息提示以及cmd模式
+
+## 插件使用文档
+
+### mason
+
+> 管理各种lsp，比如rust、go等等，install、uninstall
+
+### nvim-tree
+
+> 菜单栏操作文件、文件夹等等
+
+* o 打开关闭文件夹
+* a 创建文件
+* r 重命名
+* x 剪切
+* c 拷贝
+* p 粘贴
+* d 删除
+
+### leap 
+
+> 搜索和移动
