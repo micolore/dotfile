@@ -109,7 +109,8 @@ return packer.startup(function(use)
   use "ethanholz/nvim-lastplace"
   use "ggandor/leap.nvim"
   use "ggandor/flit.nvim"
- 
+  use "phaazon/hop.nvim"
+
   -- git
   use "NeogitOrg/neogit"
   use "lewis6991/gitsigns.nvim"                       -- Git integration
