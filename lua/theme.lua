@@ -2,7 +2,12 @@ local map = vim.api.nvim_set_keymap
 local default_opts = { noremap = true, silent = true }
 
 -- colorscheme
-local colorscheme = "gruvbox-material"
+-- local colorscheme = "gruvbox-material"
+-- local colorscheme = "catppuccin"
+-- local colorscheme = "tokyonight"
+require('github-theme').setup({
+})
+local colorscheme = "github_dark"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 
@@ -236,3 +241,5 @@ require("notify").setup({
 
 
 require('qfview').setup()
+
+

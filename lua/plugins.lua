@@ -120,6 +120,12 @@ return packer.startup(function(use)
   use "nvim-pack/nvim-spectre" --搜索替换
   use "ashfinal/qfview.nvim"
 
+  use "catppuccin/nvim" -- neovim theme
+  use "folke/tokyonight.nvim"
+  use "projekt0n/github-nvim-theme"
+
+  -- use "romgrk/barbar.nvim" -- tab line
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
