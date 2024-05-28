@@ -69,15 +69,16 @@ cmp.setup({
 })
 
 local keymap_opts = { buffer = buffer }
-vim.keymap.set("n", "<c-]>", vim.lsp.buf.definition, keymap_opts)
-vim.keymap.set("n", "K", vim.lsp.buf.hover, keymap_opts)
-vim.keymap.set("n", "gi", vim.lsp.buf.implementation, keymap_opts)
-vim.keymap.set("n", "<c-k>", vim.lsp.buf.signature_help, keymap_opts)
-vim.keymap.set("n", "1gD", vim.lsp.buf.type_definition, keymap_opts)
-vim.keymap.set("n", "gr", vim.lsp.buf.references, keymap_opts)
-vim.keymap.set("n", "g0", vim.lsp.buf.document_symbol, keymap_opts)
-vim.keymap.set("n", "gW", vim.lsp.buf.workspace_symbol, keymap_opts)
-vim.keymap.set("n", "gd", vim.lsp.buf.definition, keymap_opts)
+-- use telescope config
+-- vim.keymap.set("n", "<c-]>", vim.lsp.buf.definition, keymap_opts)
+-- vim.keymap.set("n", "K", vim.lsp.buf.hover, keymap_opts)
+-- vim.keymap.set("n", "gi", vim.lsp.buf.implementation, keymap_opts)
+-- vim.keymap.set("n", "<c-k>", vim.lsp.buf.signature_help, keymap_opts)
+-- vim.keymap.set("n", "1gD", vim.lsp.buf.type_definition, keymap_opts)
+-- vim.keymap.set("n", "g0", vim.lsp.buf.document_symbol, keymap_opts)
+-- vim.keymap.set("n", "gW", vim.lsp.buf.workspace_symbol, keymap_opts)
+-- vim.keymap.set("n", "gd", vim.lsp.buf.definition, keymap_opts)
+-- vim.keymap.set("n", "gr", vim.lsp.buf.references, keymap_opts)
 
 vim.opt.updatetime = 100
 
@@ -201,6 +202,11 @@ require'telescope'.setup({
 })
 
 require("telescope").load_extension("ui-select")
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>gb', builtin.lsp_references, {})
+vim.keymap.set('n', '<leader>gi', builtin.lsp_incoming_calls, {})
+vim.keymap.set('n', '<leader>go', builtin.lsp_outgoing_calls, {})
+vim.keymap.set('n', '<leader>gd', builtin.lsp_definitions, {})
 
 require("null-ls").setup()
 
