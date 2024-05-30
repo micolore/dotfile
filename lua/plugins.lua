@@ -98,6 +98,8 @@ return packer.startup(function(use)
 
   -- Treesitter
   use "nvim-treesitter/nvim-treesitter"               -- Treesitter configuration
+  -- use "puremourning/vimspector" -- debug
+  -- use 'CRAG666/code_runner.nvim'
 
   -- notice 
   use "folke/noice.nvim"
