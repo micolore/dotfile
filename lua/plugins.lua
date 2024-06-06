@@ -61,12 +61,12 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-nvim-lsp"                          -- Cmp source for LSP client
   use "hrsh7th/cmp-nvim-lua"                          -- Cmp source for nvim lua
   use "hrsh7th/cmp-cmdline"                           -- Cmp source for vim's cmdline
-  use "saadparwaiz1/cmp_luasnip"                      -- Luasnip completion source
-  use "hrsh7th/cmp-vsnip"
 
   -- Snippets
   use "L3MON4D3/LuaSnip"                              -- Snippet engine
   use "rafamadriz/friendly-snippets"                  -- Preconfigured snippets
+  use "hrsh7th/cmp-vsnip"
+  use "saadparwaiz1/cmp_luasnip"                      -- Luasnip completon source
 
   -- LSP
   use "neovim/nvim-lspconfig"                         -- Enable native LSP

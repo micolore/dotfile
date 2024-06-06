@@ -203,10 +203,10 @@ require'telescope'.setup({
 
 require("telescope").load_extension("ui-select")
 local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>gb', builtin.lsp_references, {})
-vim.keymap.set('n', '<leader>gd', builtin.lsp_definitions, {})
-vim.keymap.set('n', '<leader>ji', builtin.lsp_incoming_calls, {})
-vim.keymap.set('n', '<leader>jo', builtin.lsp_outgoing_calls, {})
+vim.keymap.set('n', 'gb', builtin.lsp_references, {})
+vim.keymap.set('n', 'gd', builtin.lsp_definitions, {})
+vim.keymap.set('n', 'ji', builtin.lsp_incoming_calls, {})
+vim.keymap.set('n', 'jo', builtin.lsp_outgoing_calls, {})
 
 require("null-ls").setup()
 
@@ -320,3 +320,4 @@ require('mini.indentscope').setup({
   },
   symbol = '╎',
 })
+

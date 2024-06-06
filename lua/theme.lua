@@ -239,7 +239,6 @@ require("notify").setup({
 --vim.wo.foldmethod = 'expr'
 --vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
 
-
 require('qfview').setup()
 
 

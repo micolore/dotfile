@@ -95,16 +95,31 @@ require("mason").setup({
 require("mason-lspconfig").setup()
 
 -- rust
+local rust_tools = require("rust-tools")
 
-local rt = require("rust-tools")
-
-rt.setup({
-  server = {
-    on_attach = function(_, bufnr)
-      vim.keymap.set("n", "<C-space>", rt.hover_actions.hover_actions, { buffer = bufnr })
-      vim.keymap.set("n", "<Leader>a", rt.code_action_group.code_action_group, { buffer = bufnr })
-    end,
-  },
+rust_tools.setup({
+    server = {
+       on_attach = function(client, bufnr)
+            -- Enable autoformat on save
+            vim.api.nvim_create_autocmd("BufWritePre", {
+                pattern = "*.rs",
+                callback = function()
+                    vim.lsp.buf.format({ async = true })
+                end,
+                buffer = bufnr,
+            })
+        end,
+        settings = {
+            ["rust-analyzer"] = {
+                cargo = {
+                    allFeatures = true,
+                },
+                checkOnSave = {
+                    command = "clippy",
+                },
+            },
+        },
+    },
 })
 
 local sign = function(opts)
@@ -191,10 +206,11 @@ require'telescope'.setup({
 
 require("telescope").load_extension("ui-select")
 local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>gb', builtin.lsp_references, {})
-vim.keymap.set('n', '<leader>gd', builtin.lsp_definitions, {})
-vim.keymap.set('n', '<leader>ji', builtin.lsp_incoming_calls, {})
-vim.keymap.set('n', '<leader>jo', builtin.lsp_outgoing_calls, {})
+vim.keymap.set('n', 'gb', builtin.lsp_references, {})
+vim.keymap.set('n', 'gd', builtin.lsp_definitions, {})
+vim.keymap.set('n', 'ji', builtin.lsp_incoming_calls, {})
+vim.keymap.set('n', 'jo', builtin.lsp_outgoing_calls, {})
+vim.api.nvim_set_keymap('n', '<C-m>', ':lua vim.lsp.buf.format({ async = true }); vim.cmd("write")<CR>', default_opts)
 
 require('lualine').setup({})
 
@@ -233,4 +249,6 @@ require('mini.indentscope').setup({
   },
   symbol = '╎',
 })
+
+require("neogit").setup()
 

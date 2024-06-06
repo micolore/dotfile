@@ -41,12 +41,6 @@ map('n','<leader>l','<C-W>l',{ noremap = true})
 map('n','<leader>k','<C-W>k',{ noremap = true})
 map('n','<leader>j','<C-W>j',{ noremap = true})
 
--- Buffer Move
-map('n','bu',':enew<CR>',{ noremap = true})
-map('n','bn',':bnext<CR>',{ noremap = true})
-map('n','bb',':bprevious<CR>',{ noremap = true})
-map('n','bd',':bdelete<CR>',{ noremap = true})
-
 -- Move word、line like emacs
 map('i','<C-e>','<END>',{ noremap = true})
 map('i','<C-a>','<HOME>',{ noremap = true})

@@ -51,18 +51,43 @@ require'nvim-web-devicons'.setup {
      }
     };
    }
-   vim.opt.termguicolors = true
-   require("bufferline").setup {
-       options = {
-           diagnostics = "nvim_lsp",
-           offsets = {{
-               filetype = "NvimTree",
-               text = "File Explorer",
-               highlight = "Directory",
-               text_align = "left"
-           }}
-       }
+vim.opt.termguicolors = true
+local bufferline = require('bufferline')
+bufferline.setup {
+        options = {
+            mode = "buffers", 
+            numbers =  "ordinal",
+	    offsets = {
+                {
+                    filetype = "NvimTree",
+                    text = "File Explorer",
+                    text_align = "left", 
+                    separator = true
+                }
+            },
+	    diagnostics = "nvim_lsp",
+	    color_icons = true,
+            max_name_length = 18,
+	    show_close_icon = false,
+	    modified_icon = '●',
+	    left_trunc_marker = '',
+            right_trunc_marker = '',
    }
+} 
+vim.api.nvim_set_keymap("n", "<leader>1", ":BufferLineGoToBuffer 1<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>2", ":BufferLineGoToBuffer 2<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>3", ":BufferLineGoToBuffer 3<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>4", ":BufferLineGoToBuffer 4<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>5", ":BufferLineGoToBuffer 5<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>6", ":BufferLineGoToBuffer 6<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>7", ":BufferLineGoToBuffer 7<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>8", ":BufferLineGoToBuffer 8<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>9", ":BufferLineGoToBuffer 9<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>bg", ":BufferLinePick", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "bn", ":BufferLineCycleNext<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "bb", ":BufferLineCyclePrev<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>bp", ":BufferLinePickClose<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>bo", ":BufferLineCloseLeft<CR>:BufferLineCloseRight<CR>", {noremap = true, silent = true})
 
 require("outline").setup(
 {
