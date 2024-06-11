@@ -22,3 +22,5 @@ require "lsp.snip"
 -- search
 require "search"
 
+-- git 
+require "git"

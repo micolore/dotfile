@@ -115,6 +115,7 @@ return packer.startup(function(use)
 
   -- git
   use "NeogitOrg/neogit"
+  -- use "kdheepak/lazygit.nvim"
   use "lewis6991/gitsigns.nvim"                       -- Git integration
   use "sindrets/diffview.nvim" 
 

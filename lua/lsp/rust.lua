@@ -250,5 +250,4 @@ require('mini.indentscope').setup({
   symbol = '╎',
 })
 
-require("neogit").setup()
 
