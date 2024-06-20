@@ -189,6 +189,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\kommentary",
     url = "https://github.com/b3nj5m1n/kommentary"
   },
+  ["lazygit.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lazygit.nvim",
+    url = "https://github.com/kdheepak/lazygit.nvim"
+  },
   ["leap.nvim"] = {
     loaded = true,
     path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\leap.nvim",
@@ -213,11 +218,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mini.nvim",
     url = "https://github.com/echasnovski/mini.nvim"
-  },
-  neogit = {
-    loaded = true,
-    path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neogit",
-    url = "https://github.com/NeogitOrg/neogit"
   },
   ["neoscroll.nvim"] = {
     loaded = true,
