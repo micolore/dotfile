@@ -114,8 +114,8 @@ return packer.startup(function(use)
   use "phaazon/hop.nvim"
 
   -- git
-  --use "NeogitOrg/neogit"
-  use "kdheepak/lazygit.nvim"
+  use "NeogitOrg/neogit"
+  --use "kdheepak/lazygit.nvim"
   use "lewis6991/gitsigns.nvim"                       -- Git integration
   use "sindrets/diffview.nvim" 
 
@@ -126,6 +126,7 @@ return packer.startup(function(use)
   use "catppuccin/nvim" -- neovim theme
   use "folke/tokyonight.nvim"
   use "projekt0n/github-nvim-theme"
+  use "Mofiqul/dracula.nvim"
 
   -- use "romgrk/barbar.nvim" -- tab line
 
