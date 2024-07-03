@@ -1,0 +1,138 @@
+
+sourcing "C:\tools\neovim\nvim-win64\share\nvim\runtime\ftplugin.vim"
+finished sourcing C:\tools\neovim\nvim-win64\share\nvim\runtime\ftplugin.vim
+sourcing "C:\tools\neovim\nvim-win64\share\nvim\runtime\indent.vim"
+finished sourcing C:\tools\neovim\nvim-win64\share\nvim\runtime\indent.vim
+could not source "$VIM\sysinit.vim"
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim\init.lua"
+Error detected while processing C:\Users\MOPPO-00\AppData\Local\nvim\init.lua..nvim_exec2() called at C:\Users\MOPPO-00\AppData\Local\nvim\init.lua:0:
+E216: No such group or event: FileExplorer *
+not found in runtime path: "colors/dracula.vim"
+line 0: sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\dracula.nvim\colors\dracula.lua"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\dracula.nvim\colors\dracula.lua
+continuing in nvim_exec2() called at C:\Users\MOPPO-00\AppData\Local\nvim\init.lua:0
+not found in runtime path: "lua/lualine/components/branch.lua"
+--- Autocommands ---
+not found in runtime path: "lua/lualine/components/diff.lua"
+--- Autocommands ---
+lualine  BufEnter
+    *         lua require'lualine.components.branch.git_branch'.find_git_dir()
+	Last set from ~\AppData\Local\nvim\vim\_editor.lua line 341
+--- Autocommands ---
+not found in runtime path: "lua/lualine/components/diagnostics.lua"
+--- Autocommands ---
+not found in runtime path: "ftplugin/NvimSeparator.vim ftplugin/NvimSeparator.lua ftplugin/NvimSeparator_*.vim ftplugin/NvimSeparator_*.lua ftplugin/NvimSeparator/*.vim ftplugin/NvimSeparator/*.lua"
+not found in runtime path: "indent/NvimSeparator.vim"
+not found in runtime path: "indent/NvimSeparator.lua"
+not found in runtime path: "ftplugin/NvimSeparator.vim ftplugin/NvimSeparator.lua ftplugin/NvimSeparator_*.vim ftplugin/NvimSeparator_*.lua ftplugin/NvimSeparator/*.vim ftplugin/NvimSeparator/*.lua"
+not found in runtime path: "indent/NvimSeparator.vim"
+not found in runtime path: "indent/NvimSeparator.lua"
+not found in runtime path: "ftplugin/NvimSeparator.vim ftplugin/NvimSeparator.lua ftplugin/NvimSeparator_*.vim ftplugin/NvimSeparator_*.lua ftplugin/NvimSeparator/*.vim ftplugin/NvimSeparator/*.lua"
+not found in runtime path: "indent/NvimSeparator.vim"
+not found in runtime path: "indent/NvimSeparator.lua"
+not found in runtime path: "ftplugin/NvimSeparator.vim ftplugin/NvimSeparator.lua ftplugin/NvimSeparator_*.vim ftplugin/NvimSeparator_*.lua ftplugin/NvimSeparator/*.vim ftplugin/NvimSeparator/*.lua"
+not found in runtime path: "indent/NvimSeparator.vim"
+not found in runtime path: "indent/NvimSeparator.lua"
+not found in runtime path: "package.jsonc"
+                                          Neogit HEAD requires at least NVIM 0.10 - Pin to tag 'v0.0.1' for NVIM 0.9.x
+gitsigns: Ignoring invalid configuration field 'yadm'
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim\init.lua
+sourcing "C:\tools\neovim\nvim-win64\share\nvim\runtime\filetype.lua"
+not found in runtime path: "ftdetect/*.vim"
+not found in runtime path: "ftdetect/*.lua"
+finished sourcing C:\tools\neovim\nvim-win64\share\nvim\runtime\filetype.lua
+sourcing "C:\tools\neovim\nvim-win64\share\nvim\runtime\syntax\syntax.vim"
+line 19: sourcing "C:\tools\neovim\nvim-win64\share\nvim\runtime\syntax\synload.vim"
+finished sourcing C:\tools\neovim\nvim-win64\share\nvim\runtime\syntax\synload.vim
+continuing in C:\tools\neovim\nvim-win64\share\nvim\runtime\syntax\syntax.vim
+finished sourcing C:\tools\neovim\nvim-win64\share\nvim\runtime\syntax\syntax.vim
+sourcing "C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\gzip.vim"
+finished sourcing C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\gzip.vim
+sourcing "C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\health.vim"
+finished sourcing C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\health.vim
+sourcing "C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\matchit.vim"
+not found in 'packpath': "pack/*/start/matchit"
+line 3: sourcing "C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim"
+finished sourcing C:\tools\neovim\nvim-win64\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim
+continuing in C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\matchit.vim
+finished sourcing C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\matchit.vim
+sourcing "C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\matchparen.vim"
+finished sourcing C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\matchparen.vim
+sourcing "C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\netrwPlugin.vim"
+finished sourcing C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\netrwPlugin.vim
+sourcing "C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\rplugin.vim"
+line 3: sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data/rplugin.vim"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data/rplugin.vim
+continuing in <SNR>57_LoadRemotePlugins
+finished sourcing C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\rplugin.vim
+sourcing "C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\shada.vim"
+finished sourcing C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\shada.vim
+sourcing "C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\spellfile.vim"
+finished sourcing C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\spellfile.vim
+sourcing "C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\tarPlugin.vim"
+finished sourcing C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\tarPlugin.vim
+sourcing "C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\tohtml.vim"
+finished sourcing C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\tohtml.vim
+sourcing "C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\tutor.vim"
+finished sourcing C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\tutor.vim
+sourcing "C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\zipPlugin.vim"
+finished sourcing C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\zipPlugin.vim
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim\plugin\packer_compiled.lua"
+not found in 'packpath': "pack/*/opt/packer.nvim"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim\plugin\packer_compiled.lua
+sourcing "C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\editorconfig.lua"
+finished sourcing C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\editorconfig.lua
+sourcing "C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\man.lua"
+finished sourcing C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\man.lua
+sourcing "C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\nvim.lua"
+finished sourcing C:\tools\neovim\nvim-win64\share\nvim\runtime\plugin\nvim.lua
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\Comment.nvim\plugin\Comment.lua"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\Comment.nvim\plugin\Comment.lua
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\diffview.nvim\plugin\diffview.lua"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\diffview.nvim\plugin\diffview.lua
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\FixCursorHold.nvim\plugin\fix_cursorhold_nvim.vim"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\FixCursorHold.nvim\plugin\fix_cursorhold_nvim.vim
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\github-nvim-theme\plugin\github_theme.vim"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\github-nvim-theme\plugin\github_theme.vim
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\hop.nvim\plugin\hop.vim"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\hop.nvim\plugin\hop.vim
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\kommentary\plugin\kommentary.vim"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\kommentary\plugin\kommentary.vim
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\leap.nvim\plugin\init.lua
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\LuaSnip\plugin\luasnip.vim"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\LuaSnip\plugin\luasnip.vim
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\LuaSnip\plugin\luasnip.lua"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\LuaSnip\plugin\luasnip.lua
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\neogit\plugin\neogit.lua"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\neogit\plugin\neogit.lua
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\nvim-cmp\plugin\cmp.lua"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\nvim-cmp\plugin\cmp.lua
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\nvim-lsp-installer\plugin\nvim-lsp-installer.vim"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\nvim-lsp-installer\plugin\nvim-lsp-installer.vim
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\nvim-lspconfig\plugin\lspconfig.lua"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\nvim-lspconfig\plugin\lspconfig.lua
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\nvim-spectre\plugin\spectre.lua"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\nvim-spectre\plugin\spectre.lua
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\plugin\nvim-treesitter.lua"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\plugin\nvim-treesitter.lua
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\nvim-web-devicons\plugin\nvim-web-devicons.vim"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\nvim-web-devicons\plugin\nvim-web-devicons.vim
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\plenary.nvim\plugin\plenary.vim"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\plenary.nvim\plugin\plenary.vim
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\telescope.nvim\plugin\telescope.lua"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\telescope.nvim\plugin\telescope.lua
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\todo-comments.nvim\plugin\todo.vim"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\todo-comments.nvim\plugin\todo.vim
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\vim-bbye\plugin\bbye.vim"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\vim-bbye\plugin\bbye.vim
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\vim-illuminate\plugin\illuminate.vim"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\vim-illuminate\plugin\illuminate.vim
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\vim-surround\plugin\surround.vim"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\vim-surround\plugin\surround.vim
+sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\plugin\visual-multi.vim"
+line 65: sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim"
+finished sourcing C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\plugs.vim
+continuing in C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\plugin\visual-multi.vim
+line 66: sourcing "C:\Users\MOPPO-00\AppData\Local\nvim-data\site\pack\packer\start\vim-visual-multi\autoload\vm\maps.vim"
+finished sourcing C:\Users\MOPPO-00\AppData
