@@ -1,13 +1,27 @@
 local map = vim.api.nvim_set_keymap
 local default_opts = { noremap = true, silent = true }
 
--- Setup language servers.
+--- lsp start
 local _lspconfig, lspconfig = pcall(require, "lspconfig")
 
--- Bash
 lspconfig.bashls.setup({
   autostart = false,
 })
+
+vim.lsp.set_log_level("debug")
+
+-- Mason Setup
+require("mason").setup({
+    ui = {
+        icons = {
+            package_installed = "",
+            package_pending = "",
+            package_uninstalled = "",
+        },
+    }
+})
+require("mason-lspconfig").setup()
+--- lsp end 
 
 require("project_nvim").setup {
   manual_mode = false,
@@ -69,7 +83,6 @@ cmp.setup({
 })
 
 local keymap_opts = { buffer = buffer }
-
 vim.opt.updatetime = 100
 
 local diag_float_grp = vim.api.nvim_create_augroup("DiagnosticFloat", { clear = true })
@@ -83,67 +96,6 @@ vim.api.nvim_create_autocmd("CursorHold", {
 -- Goto previous/next diagnostic warning/error
 vim.keymap.set("n", "g[", vim.diagnostic.goto_prev, keymap_opts)
 vim.keymap.set("n", "g]", vim.diagnostic.goto_next, keymap_opts)
-
--- Mason Setup
-require("mason").setup({
-    ui = {
-        icons = {
-            package_installed = "",
-            package_pending = "",
-            package_uninstalled = "",
-        },
-    }
-})
-require("mason-lspconfig").setup()
-
--- rust
-
-local rt = require("rust-tools")
-
-rt.setup({
-  server = {
-    on_attach = function(_, bufnr)
-      vim.keymap.set("n", "<C-space>", rt.hover_actions.hover_actions, { buffer = bufnr })
-      vim.keymap.set("n", "<Leader>a", rt.code_action_group.code_action_group, { buffer = bufnr })
-    end,
-  },
-})
-
-local sign = function(opts)
-  vim.fn.sign_define(opts.name, {
-    texthl = opts.name,
-    text = opts.text,
-    numhl = ''
-  })
-end
-
-sign({name = 'DiagnosticSignError', text = ''})
-sign({name = 'DiagnosticSignWarn', text = ''})
-sign({name = 'DiagnosticSignHint', text = ''})
-sign({name = 'DiagnosticSignInfo', text = ''})
-
-vim.diagnostic.config({
-    virtual_text = false,
-    signs = true,
-    update_in_insert = true,
-    underline = true,
-    severity_sort = false,
-    float = {
-        border = 'rounded',
-        source = 'always',
-        header = '',
-        prefix = '',
-    },
-})
-
-vim.opt.completeopt = {'menuone', 'noselect', 'noinsert'}
-vim.opt.shortmess = vim.opt.shortmess + { c = true}
-vim.api.nvim_set_option('updatetime', 300) 
-
-vim.cmd([[
-  set signcolumn=yes
-  autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
-]])
 
 -- Treesitter Plugin Setup 
 require('nvim-treesitter.configs').setup {
@@ -197,32 +149,13 @@ vim.keymap.set('n', 'gb', builtin.lsp_references, {})
 vim.keymap.set('n', 'gd', builtin.lsp_definitions, {})
 vim.keymap.set('n', 'ji', builtin.lsp_incoming_calls, {})
 vim.keymap.set('n', 'jo', builtin.lsp_outgoing_calls, {})
+vim.api.nvim_set_keymap('n', '<C-m>', ':lua vim.lsp.buf.format({ async = true }); vim.cmd("write")<CR>', default_opts)
 
-require("null-ls").setup()
-
-require'Comment'.setup {
-    padding = true,
-    ignore = nil,
-    toggler = {
-        line = 'gcc',
-        block = 'gbc',
-    },
-    opleader = {
-        line = 'gc',
-        block = 'gb',
-    },
-    extra = {
-        above = 'gcO',
-        below = 'gco',
-        eol = 'gcA',
-    },
-}
+require('lualine').setup({})
 
 require("nvim-autopairs").setup()
 
-require('lualine').setup({
-
-})
+require("colorful-winsep").setup()
 
 require("nvim-lastplace").setup({
    lastplace_ignore_buftype = { "quickfix", "nofile", "help" },
@@ -234,11 +167,6 @@ require("nvim-lastplace").setup({
         },
    lastplace_open_folds = true,
 })
-
-require("colorful-winsep").setup()
-
--- dashboard
--- require'alpha'.setup(require'alpha.themes.dashboard'.config)
 
 require('mini.indentscope').setup({
   draw = {
@@ -261,3 +189,38 @@ require('mini.indentscope').setup({
   symbol = '╎',
 })
 
+local sign = function(opts)
+  vim.fn.sign_define(opts.name, {
+    texthl = opts.name,
+    text = opts.text,
+    numhl = ''
+  })
+end
+
+sign({name = 'DiagnosticSignError', text = ''})
+sign({name = 'DiagnosticSignWarn', text = ''})
+sign({name = 'DiagnosticSignHint', text = ''})
+sign({name = 'DiagnosticSignInfo', text = ''})
+
+vim.diagnostic.config({
+    virtual_text = false,
+    signs = true,
+    update_in_insert = true,
+    underline = true,
+    severity_sort = false,
+    float = {
+        border = 'rounded',
+        source = 'always',
+        header = '',
+        prefix = '',
+    },
+})
+
+vim.opt.completeopt = {'menuone', 'noselect', 'noinsert'}
+vim.opt.shortmess = vim.opt.shortmess + { c = true}
+vim.api.nvim_set_option('updatetime', 300) 
+
+vim.cmd([[
+  set signcolumn=yes
+  autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
+]])

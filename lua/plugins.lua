@@ -72,7 +72,8 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig"                         -- Enable native LSP
   use "williamboman/nvim-lsp-installer"               -- Language server installer
   use "jose-elias-alvarez/null-ls.nvim"               -- Inject LSP diagnostics, code actions ...
-  use("simrat39/rust-tools.nvim")
+--use "simrat39/rust-tools.nvim"
+--use "mrcjkb/rustaceanvim"
   use 'williamboman/mason.nvim'    
   use 'williamboman/mason-lspconfig.nvim'
   use 'folke/todo-comments.nvim'
@@ -80,6 +81,10 @@ return packer.startup(function(use)
   use "tpope/vim-surround"
   use "RRethy/vim-illuminate"
   use 'nvim-zh/colorful-winsep.nvim'
+--use 'nvim-lua/lsp-status.nvim'
+--use "SmiteshP/nvim-navic"
+--use 'ray-x/lsp_signature.nvim'
+--use 'barreiroleo/ltex_extra.nvim'
 
   use 'hedyhli/outline.nvim'
 

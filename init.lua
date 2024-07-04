@@ -15,7 +15,7 @@ require "basic"
 require "theme"
 
 -- lsp
--- require "lsp.lsp"
+require "lsp.lsp"
 require "lsp.rust"
 require "lsp.snip"
 
