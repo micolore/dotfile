@@ -38,8 +38,8 @@ map('n','<leader>q',':q<CR>',{ noremap = true})
 -- Window Move
 map('n','<leader>h','<C-W>h',{ noremap = true})
 map('n','<leader>l','<C-W>l',{ noremap = true})
-map('n','<leader>k','<C-W>k',{ noremap = true})
-map('n','<leader>j','<C-W>j',{ noremap = true})
+--map('n','<leader>k','<C-W>k',{ noremap = true})
+--map('n','<leader>j','<C-W>j',{ noremap = true})
 
 -- Move word、line like emacs
 map('i','<C-e>','<END>',{ noremap = true})

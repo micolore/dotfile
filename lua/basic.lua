@@ -228,3 +228,14 @@ require("outline").setup(
 map("n", "<leader>]", "<cmd>Outline<CR>",default_opts)
 map("i", "<C-]>", "<cmd>Outline<CR>",default_opts)
 
+require("toggleterm").setup{
+  size = 20,
+  open_mapping = [[<c-\>]],
+  direction = 'tab',
+  winbar = {
+    enabled = false,
+    name_formatter = function(term) --  term: Terminal
+      return term.name
+    end
+  },
+}

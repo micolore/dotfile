@@ -8,7 +8,8 @@ lspconfig.bashls.setup({
   autostart = false,
 })
 
-vim.lsp.set_log_level("debug")
+-- open lsp debug log
+-- vim.lsp.set_log_level("debug")
 
 -- Mason Setup
 require("mason").setup({
@@ -26,7 +27,7 @@ require("mason-lspconfig").setup()
 require("project_nvim").setup {
   manual_mode = false,
   detection_methods = { "lsp", "pattern" },	
-  patterns = { ".git", "_darcs", ".hg", ".bzr", ".svn", "Makefile", "package.json" ,"=src" }  
+  patterns = { ".git","package.json" ,"=src" }  
 }
 
 require('telescope').load_extension('projects')
@@ -148,6 +149,8 @@ local builtin = require('telescope.builtin')
 vim.keymap.set('n', 'gb', builtin.lsp_references, {})
 vim.keymap.set('n', 'gd', builtin.lsp_definitions, {})
 vim.keymap.set('n', 'ji', builtin.lsp_incoming_calls, {})
+vim.keymap.set('n', '<leader>k', '<cmd>lua vim.lsp.buf.hover()<CR>', {})
+vim.keymap.set('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', {})
 vim.keymap.set('n', 'jo', builtin.lsp_outgoing_calls, {})
 vim.api.nvim_set_keymap('n', '<C-m>', ':lua vim.lsp.buf.format({ async = true }); vim.cmd("write")<CR>', default_opts)
 

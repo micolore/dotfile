@@ -194,5 +194,3 @@ require("notify").setup({
 
 require('qfview').setup()
 
-
-
