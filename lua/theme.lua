@@ -194,3 +194,4 @@ require("notify").setup({
 
 require('qfview').setup()
 
+require("colorful-winsep").setup()

@@ -128,19 +128,23 @@ local mappings = {
     ["A"] = action.add_to_qflist,
   }
 }
+-- telescope
 require'telescope'.setup({
   defaults = {
     mappings = mappings,
     layout_strategy = 'vertical',
     layout_config = {
-      height = 100,
-      width = 200,
+      height = 80,
+      width = 150,
       prompt_position = "bottom",
       prompt_position = "top",
       preview_height = 0.6,
     },
   },
   pickers = {
+    find_files = {
+      theme = "ivy",
+    }
   }
 })
 
@@ -157,8 +161,6 @@ vim.api.nvim_set_keymap('n', '<C-m>', ':lua vim.lsp.buf.format({ async = true })
 require('lualine').setup({})
 
 require("nvim-autopairs").setup()
-
-require("colorful-winsep").setup()
 
 require("nvim-lastplace").setup({
    lastplace_ignore_buftype = { "quickfix", "nofile", "help" },

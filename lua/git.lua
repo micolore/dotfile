@@ -1,3 +1,5 @@
+local map = vim.api.nvim_set_keymap
+
 local neogit = require("neogit")
 
 neogit.setup {
@@ -298,6 +300,8 @@ neogit.setup {
     },
   },
 }
+
+map('n','<leader>g',':Neogit<CR>',{noremap = true})
 
 -- Git
 require("diffview").setup()
