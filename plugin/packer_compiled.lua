@@ -389,6 +389,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vista.vim",
     url = "https://github.com/liuchengxu/vista.vim"
   },
+  ["vscode.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vscode.nvim",
+    url = "https://github.com/Mofiqul/vscode.nvim"
+  },
   ["which-key.nvim"] = {
     loaded = true,
     path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\which-key.nvim",

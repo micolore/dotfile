@@ -132,6 +132,7 @@ return packer.startup(function(use)
   use "folke/tokyonight.nvim"
   use "projekt0n/github-nvim-theme"
   use "Mofiqul/dracula.nvim"
+  use 'Mofiqul/vscode.nvim'
 
   -- use "romgrk/barbar.nvim" -- tab line
 

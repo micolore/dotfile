@@ -2,19 +2,19 @@ local map = vim.api.nvim_set_keymap
 local default_opts = { noremap = true, silent = true }
 
 -- colorscheme
+require('vscode').load('dark')
+--require('github-theme').setup({})
+
 -- local colorscheme = "gruvbox-material"
 -- local colorscheme = "catppuccin"
 -- local colorscheme = "tokyonight"
--- require('github-theme').setup({})
-local colorscheme = "dracula"
-
-local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
-
+-- local colorscheme = "dracula"
+--local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 -- clolorscheme
-if not status_ok then
-  vim.notify("colorscheme " .. colorscheme .. " not found!")
-  return
-end
+--if not status_ok then
+--  vim.notify("colorscheme " .. colorscheme .. " not found!")
+--  return
+--end
 
 -- notice you can choice nerd font or default
 require("noice").setup({
