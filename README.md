@@ -54,15 +54,26 @@
 
 > 搜索和移动, 键入f，输入你要跳转的字符串（js），使用提示键（labes）进行切换。
 
+> hop是跳指定位置，laap是跳指定字符串，两者的场景并不冲突，就看你常用的是哪个了。
+
 ### 其他
+
 > 把当前所有的键映射输出到文件里面
 
 :redir! > vim_keys.txt
 :silent verbose map
 :redir END
 
-### neogit 
+### git
+
+
+#### netgit
 
 > git commit 
 
 :Neogit
+
+### terminal
+
+命令行插件toggleterm挺好用
+
