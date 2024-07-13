@@ -153,9 +153,9 @@ local builtin = require('telescope.builtin')
 vim.keymap.set('n', 'gb', builtin.lsp_references, {})
 vim.keymap.set('n', 'gd', builtin.lsp_definitions, {})
 vim.keymap.set('n', 'ji', builtin.lsp_incoming_calls, {})
+vim.keymap.set('n', 'jo', builtin.lsp_outgoing_calls, {})
 vim.keymap.set('n', '<leader>k', '<cmd>lua vim.lsp.buf.hover()<CR>', {})
 vim.keymap.set('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', {})
-vim.keymap.set('n', 'jo', builtin.lsp_outgoing_calls, {})
 vim.api.nvim_set_keymap('n', '<C-m>', ':lua vim.lsp.buf.format({ async = true }); vim.cmd("write")<CR>', default_opts)
 
 require('lualine').setup({

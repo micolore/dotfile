@@ -3,42 +3,26 @@ local map = vim.api.nvim_set_keymap
 local neogit = require("neogit")
 
 neogit.setup {
-  -- Hides the hints at the top of the status buffer
   disable_hint = false,
-  -- Disables changing the buffer highlights based on where the cursor is.
   disable_context_highlighting = false,
-  -- Disables signs for sections/items/hunks
   disable_signs = false,
-  -- Changes what mode the Commit Editor starts in. `true` will leave nvim in normal mode, `false` will change nvim to
-  -- insert mode, and `"auto"` will change nvim to insert mode IF the commit message is empty, otherwise leaving it in
-  -- normal mode.
   disable_insert_on_commit = "auto",
-  -- When enabled, will watch the `.git/` directory for changes and refresh the status buffer in response to filesystem
-  -- events.
   filewatcher = {
     interval = 1000,
     enabled = true,
   },
-  -- "ascii"   is the graph the git CLI generates
-  -- "unicode" is the graph like https://github.com/rbong/vim-flog
   graph_style = "ascii",
-  -- Used to generate URL's for branch popup action "pull request".
   git_services = {
     ["github.com"] = "https://github.com/${owner}/${repository}/compare/${branch_name}?expand=1",
     ["bitbucket.org"] = "https://bitbucket.org/${owner}/${repository}/pull-requests/new?source=${branch_name}&t=1",
     ["gitlab.com"] = "https://gitlab.com/${owner}/${repository}/merge_requests/new?merge_request[source_branch]=${branch_name}",
     ["azure.com"] = "https://dev.azure.com/${owner}/_git/${repository}/pullrequestcreate?sourceRef=${branch_name}&targetRef=${target}",
   },
-  -- Allows a different telescope sorter. Defaults to 'fuzzy_with_index_bias'. The example below will use the native fzf
-  -- sorter instead. By default, this function returns `nil`.
   telescope_sorter = function()
     return require("telescope").extensions.fzf.native_fzf_sorter()
   end,
-  -- Persist the values of switches/options within and across sessions
   remember_settings = true,
-  -- Scope persisted settings on a per-project basis
   use_per_project_settings = true,
-  -- Table of settings to never persist. Uses format "Filetype--cli-value"
   ignored_settings = {
     "NeogitPushPopup--force-with-lease",
     "NeogitPushPopup--force",
@@ -46,31 +30,18 @@ neogit.setup {
     "NeogitCommitPopup--allow-empty",
     "NeogitRevertPopup--no-edit",
   },
-  -- Configure highlight group features
   highlight = {
     italic = true,
     bold = true,
     underline = true
   },
-  -- Set to false if you want to be responsible for creating _ALL_ keymappings
   use_default_keymaps = true,
-  -- Neogit refreshes its internal state after specific events, which can be expensive depending on the repository size.
-  -- Disabling `auto_refresh` will make it so you have to manually refresh the status after you open it.
   auto_refresh = true,
-  -- Value used for `--sort` option for `git branch` command
-  -- By default, branches will be sorted by commit date descending
-  -- Flag description: https://git-scm.com/docs/git-branch#Documentation/git-branch.txt---sortltkeygt
-  -- Sorting keys: https://git-scm.com/docs/git-for-each-ref#_options
   sort_branches = "-committerdate",
-  -- Change the default way of opening neogit
   kind = "tab",
-  -- Disable line numbers and relative line numbers
   disable_line_numbers = true,
-  -- The time after which an output console is shown for slow running commands
   console_timeout = 2000,
-  -- Automatically show console if a command takes more than console_timeout milliseconds
   auto_show_console = true,
-  -- Automatically close the console if the process exits with a 0 (success) status
   auto_close_console = true,
   status = {
     show_head_commit_hash = true,
@@ -99,12 +70,6 @@ neogit.setup {
   commit_editor = {
     kind = "tab",
     show_staged_diff = true,
-    -- Accepted values:
-    -- "split" to show the staged diff below the commit editor
-    -- "vsplit" to show it to the right
-    -- "split_above" Like :top split
-    -- "vsplit_left" like :vsplit, but open to the left
-    -- "auto" "vsplit" if window would have 80 cols, otherwise "split"
     staged_diff_split_kind = "split"
   },
   commit_select_view = {
@@ -141,24 +106,12 @@ neogit.setup {
     item = { ">", "v" },
     section = { ">", "v" },
   },
-  -- Each Integration is auto-detected through plugin presence, however, it can be disabled by setting to `false`
   integrations = {
-    -- If enabled, use telescope for menu selection rather than vim.ui.select.
-    -- Allows multi-select and some things that vim.ui.select doesn't.
     telescope = nil,
-    -- Neogit only provides inline diffs. If you want a more traditional way to look at diffs, you can use `diffview`.
-    -- The diffview integration enables the diff popup.
-    --
-    -- Requires you to have `sindrets/diffview.nvim` installed.
     diffview = nil,
-
-    -- If enabled, uses fzf-lua for menu selection. If the telescope integration
-    -- is also selected then telescope is used instead
-    -- Requires you to have `ibhagwan/fzf-lua` installed.
     fzf_lua = nil,
   },
   sections = {
-    -- Reverting/Cherry Picking
     sequencer = {
       folded = false,
       hidden = false,
@@ -248,7 +201,6 @@ neogit.setup {
       ["<s-tab>"] = "MultiselectTogglePrevious",
       ["<c-j>"] = "NOP",
     },
-    -- Setting any of these to `false` will disable the mapping.
     popup = {
       ["?"] = "HelpPopup",
       ["A"] = "CherryPickPopup",
@@ -315,19 +267,19 @@ require('gitsigns').setup {
     changedelete = { text = '~' },
     untracked    = { text = '┆' },
   },
-  signcolumn = true,  -- Toggle with `:Gitsigns toggle_signs`
-  numhl      = false, -- Toggle with `:Gitsigns toggle_numhl`
-  linehl     = false, -- Toggle with `:Gitsigns toggle_linehl`
-  word_diff  = false, -- Toggle with `:Gitsigns toggle_word_diff`
+  signcolumn = true,  
+  numhl      = false, 
+  linehl     = false, 
+  word_diff  = false, 
   watch_gitdir = {
     follow_files = true
   },
   auto_attach = true,
   attach_to_untracked = false,
-  current_line_blame = false, -- Toggle with `:Gitsigns toggle_current_line_blame`
+  current_line_blame = false, 
   current_line_blame_opts = {
     virt_text = true,
-    virt_text_pos = 'eol', -- 'eol' | 'overlay' | 'right_align'
+    virt_text_pos = 'eol', 
     delay = 1000,
     ignore_whitespace = false,
     virt_text_priority = 100,
@@ -335,10 +287,9 @@ require('gitsigns').setup {
   current_line_blame_formatter = '<author>, <author_time:%Y-%m-%d> - <summary>',
   sign_priority = 6,
   update_debounce = 100,
-  status_formatter = nil, -- Use default
-  max_file_length = 40000, -- Disable if file is longer than this (in lines)
+  status_formatter = nil, 
+  max_file_length = 40000, 
   preview_config = {
-    -- Options passed to nvim_open_win
     border = 'single',
     style = 'minimal',
     relative = 'cursor',
@@ -347,5 +298,47 @@ require('gitsigns').setup {
   },
   yadm = {
     enable = false
-  }
+  },
+  on_attach = function(bufnr)
+    local gitsigns = require('gitsigns')
+
+    local function map(mode, l, r, opts)
+      opts = opts or {}
+      opts.buffer = bufnr
+      vim.keymap.set(mode, l, r, opts)
+    end
+
+    -- Navigation
+    map('n', ']c', function()
+      if vim.wo.diff then
+        vim.cmd.normal({']c', bang = true})
+      else
+        gitsigns.nav_hunk('next')
+      end
+    end)
+
+    map('n', '[c', function()
+      if vim.wo.diff then
+        vim.cmd.normal({'[c', bang = true})
+      else
+        gitsigns.nav_hunk('prev')
+      end
+    end)
+
+    map('n', '<leader>hs', gitsigns.stage_hunk)
+    map('n', '<leader>hr', gitsigns.reset_hunk)
+    map('v', '<leader>hs', function() gitsigns.stage_hunk {vim.fn.line('.'), vim.fn.line('v')} end)
+    map('v', '<leader>hr', function() gitsigns.reset_hunk {vim.fn.line('.'), vim.fn.line('v')} end)
+    map('n', '<leader>hS', gitsigns.stage_buffer)
+    map('n', '<leader>hu', gitsigns.undo_stage_hunk)
+    map('n', '<leader>hR', gitsigns.reset_buffer)
+    map('n', '<leader>hp', gitsigns.preview_hunk)
+    map('n', '<leader>hb', function() gitsigns.blame_line{full=true} end)
+    map('n', '<leader>tb', gitsigns.toggle_current_line_blame)
+    map('n', '<leader>hd', gitsigns.diffthis)
+    map('n', '<leader>hD', function() gitsigns.diffthis('~') end)
+    map('n', '<leader>td', gitsigns.toggle_deleted)
+
+    map({'o', 'x'}, 'ih', ':<C-U>Gitsigns select_hunk<CR>')
+  end
 }
