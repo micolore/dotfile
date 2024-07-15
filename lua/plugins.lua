@@ -105,6 +105,8 @@ return packer.startup(function(use)
   use "nvim-treesitter/nvim-treesitter"               -- Treesitter configuration
   -- use "puremourning/vimspector" -- debug
   -- use 'CRAG666/code_runner.nvim'
+  use "folke/zen-mode.nvim"
+  use "folke/twilight.nvim"
 
   -- notice 
   use "folke/noice.nvim"
@@ -123,6 +125,7 @@ return packer.startup(function(use)
   --use "kdheepak/lazygit.nvim"
   use "lewis6991/gitsigns.nvim"                       -- Git integration
   use "sindrets/diffview.nvim" 
+  use "f-person/git-blame.nvim"
 
   use "folke/which-key.nvim"
   use "nvim-pack/nvim-spectre" --搜索替换
@@ -133,6 +136,7 @@ return packer.startup(function(use)
   use "projekt0n/github-nvim-theme"
   use "Mofiqul/dracula.nvim"
   use 'Mofiqul/vscode.nvim'
+
 
   -- use "romgrk/barbar.nvim" -- tab line
 

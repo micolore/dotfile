@@ -77,7 +77,7 @@ neogit.setup {
   },
   commit_view = {
     kind = "vsplit",
-    verify_commit = vim.fn.executable("gpg") == 1, -- Can be set to true or false, otherwise we try to find the binary
+    verify_commit = vim.fn.executable("gpg") == 1, 
   },
   log_view = {
     kind = "tab",
@@ -101,7 +101,6 @@ neogit.setup {
     kind = "split",
   },
   signs = {
-    -- { CLOSED, OPENED }
     hunk = { "", "" },
     item = { ">", "v" },
     section = { ">", "v" },
@@ -308,7 +307,6 @@ require('gitsigns').setup {
       vim.keymap.set(mode, l, r, opts)
     end
 
-    -- Navigation
     map('n', ']c', function()
       if vim.wo.diff then
         vim.cmd.normal({']c', bang = true})
@@ -341,4 +339,8 @@ require('gitsigns').setup {
 
     map({'o', 'x'}, 'ih', ':<C-U>Gitsigns select_hunk<CR>')
   end
+}
+
+require('gitblame').setup {
+    enabled = false,
 }
