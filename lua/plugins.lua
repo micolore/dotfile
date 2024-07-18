@@ -39,7 +39,7 @@ return packer.startup(function(use)
   use "moll/vim-bbye"                                 -- Bclose.vim but rewritten and well maintained.
   use "karb94/neoscroll.nvim"
 
-  -- use 'nacro90/numb.nvim'                             -- Easy peek lines
+  -- use 'nacro90/numb.nvim'                          -- Easy peek lines
   use 'mg979/vim-visual-multi'                        -- Multiple cursors
   use 'nvim-lualine/lualine.nvim'                     -- Easy to configure neovim statusline
   use "akinsho/toggleterm.nvim"                       -- Easily manage multiple terminal windows
@@ -50,6 +50,7 @@ return packer.startup(function(use)
   -- Startify
   use 'goolord/alpha-nvim'                            -- Greeter like startify
   use "antoinemadec/FixCursorHold.nvim"               -- Fix lsp doc highlight
+  use "nvimdev/dashboard-nvim"
 
   -- Colorscheme
   use 'sainnhe/gruvbox-material'                      -- Gruvbox with Material Palette
@@ -72,8 +73,6 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig"                         -- Enable native LSP
   use "williamboman/nvim-lsp-installer"               -- Language server installer
   use "jose-elias-alvarez/null-ls.nvim"               -- Inject LSP diagnostics, code actions ...
---use "simrat39/rust-tools.nvim"
---use "mrcjkb/rustaceanvim"
   use 'williamboman/mason.nvim'    
   use 'williamboman/mason-lspconfig.nvim'
   use 'folke/todo-comments.nvim'
@@ -81,11 +80,6 @@ return packer.startup(function(use)
   use "tpope/vim-surround"
   use "RRethy/vim-illuminate"
   use 'nvim-zh/colorful-winsep.nvim'
---use 'nvim-lua/lsp-status.nvim'
---use "SmiteshP/nvim-navic"
---use 'ray-x/lsp_signature.nvim'
---use 'barreiroleo/ltex_extra.nvim'
-
   use 'hedyhli/outline.nvim'
 
   -- comment
@@ -136,7 +130,6 @@ return packer.startup(function(use)
   use "projekt0n/github-nvim-theme"
   use "Mofiqul/dracula.nvim"
   use 'Mofiqul/vscode.nvim'
-
 
   -- use "romgrk/barbar.nvim" -- tab line
 

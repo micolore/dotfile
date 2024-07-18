@@ -235,3 +235,4 @@ vim.cmd([[
 ]])
 
 require('Comment').setup()
+

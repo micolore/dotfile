@@ -139,6 +139,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\colorful-winsep.nvim",
     url = "https://github.com/nvim-zh/colorful-winsep.nvim"
   },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dashboard-nvim",
+    url = "https://github.com/nvimdev/dashboard-nvim"
+  },
   ["diffview.nvim"] = {
     loaded = true,
     path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\diffview.nvim",

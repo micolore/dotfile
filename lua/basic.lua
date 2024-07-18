@@ -88,6 +88,8 @@ vim.api.nvim_set_keymap("n", "<leader>9", ":BufferLineGoToBuffer 9<CR>", {norema
 vim.api.nvim_set_keymap("n", "<leader>bg", ":BufferLinePick", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "bn", ":BufferLineCycleNext<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "bb", ":BufferLineCyclePrev<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "bd", ":Bdelete<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "bc", ":bufdo :Bdelete<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>bp", ":BufferLinePickClose<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>bo", ":BufferLineCloseLeft<CR>:BufferLineCloseRight<CR>", {noremap = true, silent = true})
 
