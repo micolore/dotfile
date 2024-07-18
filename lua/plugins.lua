@@ -81,13 +81,11 @@ return packer.startup(function(use)
   use "RRethy/vim-illuminate"
   use 'nvim-zh/colorful-winsep.nvim'
   use 'hedyhli/outline.nvim'
+  use "liuchengxu/vista.vim"
 
   -- comment
   use "numToStr/Comment.nvim"
   use "b3nj5m1n/kommentary"                           -- Commenting plugin
-  
-  --use "preservim/tagbar"
-  use "liuchengxu/vista.vim"
   
   -- Fzf
   use 'kyazdani42/nvim-tree.lua'                      -- File explorer tree
@@ -97,8 +95,6 @@ return packer.startup(function(use)
 
   -- Treesitter
   use "nvim-treesitter/nvim-treesitter"               -- Treesitter configuration
-  -- use "puremourning/vimspector" -- debug
-  -- use 'CRAG666/code_runner.nvim'
   use "folke/zen-mode.nvim"
   use "folke/twilight.nvim"
 
@@ -116,7 +112,6 @@ return packer.startup(function(use)
 
   -- git
   use "NeogitOrg/neogit"
-  --use "kdheepak/lazygit.nvim"
   use "lewis6991/gitsigns.nvim"                       -- Git integration
   use "sindrets/diffview.nvim" 
   use "f-person/git-blame.nvim"
@@ -125,13 +120,12 @@ return packer.startup(function(use)
   use "nvim-pack/nvim-spectre" --搜索替换
   use "ashfinal/qfview.nvim"
 
+  -- theme
   use "catppuccin/nvim" -- neovim theme
   use "folke/tokyonight.nvim"
   use "projekt0n/github-nvim-theme"
   use "Mofiqul/dracula.nvim"
   use 'Mofiqul/vscode.nvim'
-
-  -- use "romgrk/barbar.nvim" -- tab line
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()

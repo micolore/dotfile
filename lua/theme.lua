@@ -3,7 +3,7 @@ local default_opts = { noremap = true, silent = true }
 
 require('dashboard').setup {
    theme = 'hyper',
-    config = {
+   config = {
       week_header = {
        enable = true,
       },
@@ -30,7 +30,13 @@ require('dashboard').setup {
           key = 'd',
         },
       },
-    },
+   },
+   hide = {
+      widbar
+   },
+   preview = {
+      file_height
+   }
 }
 
 -- colorscheme
@@ -206,21 +212,21 @@ require("notify").setup({
     background_colour = "NotifyBackground",
     fps = 20,
     icons = {
-      DEBUG = "",
-      ERROR = "",
-      INFO = "",
-      TRACE = "✎",
-      WARN = ""
+      DEBUG = "🐞",
+      ERROR = "❌",
+      INFO = "✅",
+      TRACE = "📒",
+      WARN = "❗❗❗"
     },
     level = 2,
-    minimum_width = 50,
+    minimum_width = 60,
     render = "default",
     stages = "fade_in_slide_out",
     time_formats = {
       notification = "%T",
       notification_history = "%FT%T"
     },
-    timeout = 200,
+    timeout = 3000,
     top_down = false 
 })
 
