@@ -39,7 +39,6 @@ return packer.startup(function(use)
   use "moll/vim-bbye"                                 -- Bclose.vim but rewritten and well maintained.
   use "karb94/neoscroll.nvim"
 
-  -- use 'nacro90/numb.nvim'                          -- Easy peek lines
   use 'mg979/vim-visual-multi'                        -- Multiple cursors
   use 'nvim-lualine/lualine.nvim'                     -- Easy to configure neovim statusline
   use "akinsho/toggleterm.nvim"                       -- Easily manage multiple terminal windows
@@ -121,7 +120,6 @@ return packer.startup(function(use)
   use "ashfinal/qfview.nvim"
 
   -- theme
-  use "catppuccin/nvim" -- neovim theme
   use "folke/tokyonight.nvim"
   use "projekt0n/github-nvim-theme"
   use "Mofiqul/dracula.nvim"

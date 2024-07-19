@@ -27,7 +27,7 @@ require("mason-lspconfig").setup()
 require("project_nvim").setup {
   manual_mode = false,
   detection_methods = { "lsp", "pattern" },	
-  patterns = { ".git","package.json" ,"=src" }  
+  patterns = { ".git","package.json","Cargo.toml" }  
 }
 
 require('telescope').load_extension('projects')
@@ -128,25 +128,6 @@ local mappings = {
     ["A"] = action.add_to_qflist,
   }
 }
--- telescope
-require'telescope'.setup({
-  defaults = {
-    mappings = mappings,
-    layout_strategy = 'vertical',
-    layout_config = {
-      height = 80,
-      width = 150,
-      prompt_position = "bottom",
-      prompt_position = "top",
-      preview_height = 0.6,
-    },
-  },
-  pickers = {
-    find_files = {
-      theme = "ivy",
-    }
-  }
-})
 
 require("telescope").load_extension("ui-select")
 local builtin = require('telescope.builtin')

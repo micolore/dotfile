@@ -53,11 +53,12 @@ map('i','<C-d>','<C-o>dw',default_opts)
 map('n','<leader>r',':NvimTreeToggle<CR>',{noremap = true})
 
 -- Telescope
-vim.api.nvim_set_keymap('n', 'ff',"<cmd>lua require('telescope.builtin').find_files() prompt_prefix=🔍<CR>",{ noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', 'fg',"<cmd>lua require('telescope.builtin').live_grep()<CR>",{ noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'ff',"<cmd>Telescope find_files prompt_prefix=🔍<CR>",{ noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'fg',"<cmd>Telescope live_grep prompt_prefix=🔎<CR>",{ noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'fb',"<cmd>lua require('telescope.builtin').buffers()<CR>",{ noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'fl',"<cmd>lua require('telescope.builtin').oldfiles()<CR>",{ noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'fh',"<cmd>lua require('telescope.builtin').help_tags()<CR>",{ noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'fp',"<cmd>Telescope projects<CR>",{ noremap = true, silent = true })
 
 -- 离开输入模式，自动切换成英文模式(silent 静默模式)
 vim.api.nvim_create_autocmd({ "InsertLeave" }, {

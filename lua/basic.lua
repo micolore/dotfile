@@ -7,6 +7,12 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
 require("nvim-tree").setup({
+  sync_root_with_cwd = true,
+  respect_buf_cwd = true,
+  update_focused_file = {
+    enable = true,
+    update_root = true
+  },
   sort = {
     sorter = "case_sensitive",
   },
@@ -237,7 +243,7 @@ require("toggleterm").setup{
   direction = 'float',
   winbar = {
     enabled = false,
-    name_formatter = function(term) --  term: Terminal
+    name_formatter = function(term) 
       return term.name
     end
   },
@@ -248,3 +254,23 @@ require("toggleterm").setup{
      border = 'curved'
   }
 }
+
+-- telescope
+require'telescope'.setup({
+  defaults = {
+    mappings = mappings,
+    layout_strategy = 'vertical',
+    layout_config = {
+      height = 80,
+      width = 150,
+      prompt_position = "bottom",
+      prompt_position = "top",
+      -- preview_height = 0.6,
+    },
+  },
+  pickers = {
+    find_files = {
+      theme = "dropdown",
+    }
+  }
+})

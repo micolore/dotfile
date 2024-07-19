@@ -259,11 +259,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\null-ls.nvim",
     url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
-  nvim = {
-    loaded = true,
-    path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim",
-    url = "https://github.com/catppuccin/nvim"
-  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-autopairs",

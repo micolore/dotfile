@@ -4,9 +4,13 @@ local default_opts = { noremap = true, silent = true }
 require('dashboard').setup {
    theme = 'hyper',
    config = {
-      week_header = {
-       enable = true,
+      project = {
+	enable = true,
+	limit = 8,
+	icon  = "📘",
+	action = 'Telescope projects cwd='
       },
+      header = {},
       shortcut = {
         { desc = '󰊳 Update', group = '@property', action = 'Lazy update', key = 'u' },
         {
@@ -20,7 +24,7 @@ require('dashboard').setup {
         {
           desc = ' Apps',
           group = 'DiagnosticHint',
-          action = 'Telescope app',
+          action = 'Telescope projects',
           key = 'a',
         },
         {
@@ -30,13 +34,15 @@ require('dashboard').setup {
           key = 'd',
         },
       },
+      mru = { 
+	   limit = 15 , 
+	   cwd_only = false,
+	   icon = "🕕"
+      },
+      footer= {
+	 "🎉 No Code, No Bug 🎉"
+      }
    },
-   hide = {
-      widbar
-   },
-   preview = {
-      file_height
-   }
 }
 
 -- colorscheme
@@ -260,3 +266,5 @@ require("colorful-winsep").setup()
   },
   exclude = {}, 
 }) ]]
+
+
