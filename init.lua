@@ -17,6 +17,7 @@ require "theme"
 -- lsp
 require "lsp.lsp"
 require "lsp.rust"
+require "lsp.java"
 require "lsp.snip"
 
 -- search

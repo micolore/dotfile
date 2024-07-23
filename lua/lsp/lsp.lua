@@ -1,13 +1,6 @@
 local map = vim.api.nvim_set_keymap
 local default_opts = { noremap = true, silent = true }
 
---- lsp start
-local _lspconfig, lspconfig = pcall(require, "lspconfig")
-
-lspconfig.bashls.setup({
-  autostart = false,
-})
-
 -- open lsp debug log
 -- vim.lsp.set_log_level("debug")
 
@@ -19,9 +12,21 @@ require("mason").setup({
             package_pending = "",
             package_uninstalled = "",
         },
-    }
+    },
+    registries = {
+       "github:nvim-java/mason-registry",
+       "github:mason-org/mason-registry",
+    },
 })
+
 require("mason-lspconfig").setup()
+
+--- lsp start
+local _lspconfig, lspconfig = pcall(require, "lspconfig")
+
+lspconfig.bashls.setup({
+  autostart = false,
+})
 --- lsp end 
 
 require("project_nvim").setup {

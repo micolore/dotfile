@@ -81,6 +81,16 @@ return packer.startup(function(use)
   use 'nvim-zh/colorful-winsep.nvim'
   use 'hedyhli/outline.nvim'
   use "liuchengxu/vista.vim"
+  -- java
+  use "nvim-java/lua-async-await"
+  use "nvim-java/nvim-java"
+  use "nvim-java/nvim-java-core"
+  use "nvim-java/nvim-java-test"
+  use "nvim-java/nvim-java-dap"
+  use "mfussenegger/nvim-dap"
+  use "nvim-java/nvim-java-refactor"
+  --use "JavaHello/spring-boot.nvim"
+  use "ibhagwan/fzf-lua"
 
   -- comment
   use "numToStr/Comment.nvim"
