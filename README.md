@@ -77,3 +77,8 @@
 
 命令行插件toggleterm挺好用
 
+### java
+
+* nvim-java
+
+

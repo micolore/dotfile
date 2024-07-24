@@ -189,7 +189,7 @@ require("outline").setup(
       blacklist_clients = {},
     },
     markdown = {
-      filetypes = {'markdown'},
+      filetypes = {'markdown',"lsp"},
     },
   },
 

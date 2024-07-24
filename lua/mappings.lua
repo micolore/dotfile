@@ -54,7 +54,10 @@ map('n','<leader>r',':NvimTreeToggle<CR>',{noremap = true})
 
 -- Telescope
 vim.api.nvim_set_keymap('n', 'ff',"<cmd>Telescope find_files prompt_prefix=🔍<CR>",{ noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-g>',"<cmd>Telescope live_grep prompt_prefix=🔎<CR>",{ noremap = true, silent = true })
+--vim.api.nvim_set_keymap('n', 'fs',"<cmd>Telescope search_history prompt_prefix=🔍<CR>",{ noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'sa',"<cmd>Telescope live_grep prompt_prefix=🔎<CR>",{ noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'fg',"<cmd>Telescope git_files prompt_prefix=🔎<CR>",{ noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'gs',"<cmd>Telescope grep_string prompt_prefix=🔎<CR>",{ noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'fb',"<cmd>lua require('telescope.builtin').buffers()<CR>",{ noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'fl',"<cmd>lua require('telescope.builtin').oldfiles()<CR>",{ noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'fp',"<cmd>Telescope projects<CR>",{ noremap = true, silent = true })
