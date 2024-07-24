@@ -14,3 +14,5 @@ end, {silent = true})
 
 -- tutorial https://github.com/ziontee113/luasnip-tutorial 
 -- all file https://github.com/honza/vim-snippets
+
+require('snippets.java')
