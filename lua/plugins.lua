@@ -106,6 +106,7 @@ return packer.startup(function(use)
   use "nvim-treesitter/nvim-treesitter"               -- Treesitter configuration
   use "folke/zen-mode.nvim"
   use "folke/twilight.nvim"
+  use "Mr-LLLLL/cool-chunk.nvim"
 
   -- notice 
   use "folke/noice.nvim"

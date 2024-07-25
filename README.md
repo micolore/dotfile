@@ -80,5 +80,9 @@
 ### java
 
 * nvim-java
+* https://sookocheff.com/post/vim/neovim-java-ide/
+* https://github.com/magidc/nvim-config/
 
+### snip
 
+* https://zjp-cn.github.io/neovim0.6-blogs/nvim/luasnip/doc1.html

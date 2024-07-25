@@ -139,6 +139,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\colorful-winsep.nvim",
     url = "https://github.com/nvim-zh/colorful-winsep.nvim"
   },
+  ["cool-chunk.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cool-chunk.nvim",
+    url = "https://github.com/Mr-LLLLL/cool-chunk.nvim"
+  },
   ["dashboard-nvim"] = {
     loaded = true,
     path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dashboard-nvim",

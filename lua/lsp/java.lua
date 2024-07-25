@@ -1,37 +1,26 @@
 require('java').setup(
  {
   root_markers = {
-    'settings.gradle',
-    'settings.gradle.kts',
-    'pom.xml',
-    'build.gradle',
+    '.git',
     'mvnw',
     'gradlew',
-    'build.gradle',
-    'build.gradle.kts',
-    '.git',
+    'pom.xml',
   },
-
   java_test = {
-    enable = true,
+    enable = false,
   },
-
   java_debug_adapter = {
-    enable = true,
+    enable = false,
   },
-
   spring_boot_tools = {
     enable = false,
   },
-
   jdk = {
     auto_install = true,
   },
-
   notifications = {
-    dap = true,
+    dap = false,
   },
-
   verification = {
     invalid_order = true,
     duplicate_setup_calls = true,
