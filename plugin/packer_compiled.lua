@@ -204,11 +204,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\impatient.nvim",
     url = "https://github.com/lewis6991/impatient.nvim"
   },
-  ["indent-blankline.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indent-blankline.nvim",
-    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
-  },
   kommentary = {
     loaded = true,
     path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\kommentary",
@@ -453,6 +448,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\which-key.nvim",
     url = "https://github.com/folke/which-key.nvim"
+  },
+  ["yankbank-nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\yankbank-nvim",
+    url = "https://github.com/ptdewey/yankbank-nvim"
   },
   ["zen-mode.nvim"] = {
     loaded = true,

@@ -274,3 +274,19 @@ require'telescope'.setup({
     }
   }
 })
+
+require('yankbank').setup({
+     max_entries = 9,
+     sep = "---",
+     num_behavior = "prefix",
+     focus_gain_poll = true,
+     keymaps = {
+            navigation_next = "j",
+            navigation_prev = "k",
+     },
+     registers = {
+            yank_register = "+",
+     },
+})
+
+vim.keymap.set("n", "<leader>y", "<cmd>YankBank<CR>", { noremap = true })

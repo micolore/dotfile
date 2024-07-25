@@ -38,12 +38,12 @@ return packer.startup(function(use)
   use "akinsho/bufferline.nvim"                       -- Snazzy bufferline
   use "moll/vim-bbye"                                 -- Bclose.vim but rewritten and well maintained.
   use "karb94/neoscroll.nvim"
+  use "ptdewey/yankbank-nvim"
 
   use 'mg979/vim-visual-multi'                        -- Multiple cursors
   use 'nvim-lualine/lualine.nvim'                     -- Easy to configure neovim statusline
   use "akinsho/toggleterm.nvim"                       -- Easily manage multiple terminal windows
   use 'lewis6991/impatient.nvim'                      -- Improve startup time
-  use "lukas-reineke/indent-blankline.nvim"           -- Indent guides
   use "echasnovski/mini.nvim"
 
   -- Startify
@@ -106,7 +106,9 @@ return packer.startup(function(use)
   use "nvim-treesitter/nvim-treesitter"               -- Treesitter configuration
   use "folke/zen-mode.nvim"
   use "folke/twilight.nvim"
-  use "Mr-LLLLL/cool-chunk.nvim"
+
+  -- use "lukas-reineke/indent-blankline.nvim"           -- Indent guides
+  use "Mr-LLLLL/cool-chunk.nvim" 		      -- line chunk
 
   -- notice 
   use "folke/noice.nvim"
