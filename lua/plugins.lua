@@ -39,6 +39,10 @@ return packer.startup(function(use)
   use "moll/vim-bbye"                                 -- Bclose.vim but rewritten and well maintained.
   use "karb94/neoscroll.nvim"
   use "ptdewey/yankbank-nvim"
+  use {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+   }
 
   use 'mg979/vim-visual-multi'                        -- Multiple cursors
   use 'nvim-lualine/lualine.nvim'                     -- Easy to configure neovim statusline
