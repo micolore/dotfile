@@ -14,7 +14,7 @@ opt.relativenumber = true
 
 map("n", "<Leader>u", ":PackerSync<CR>",default_opts)
 
--- quick new  file
+-- quick new file
 map("n", "<Leader>n", "<cmd>enew<CR>",default_opts)
 -- select all of file
 map("n", "<Leader>aa", "ggVG<c-$>",default_opts)
@@ -61,6 +61,7 @@ vim.api.nvim_set_keymap('n', 'gs',"<cmd>Telescope grep_string prompt_prefix=🔎
 vim.api.nvim_set_keymap('n', 'fb',"<cmd>lua require('telescope.builtin').buffers()<CR>",{ noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'fl',"<cmd>lua require('telescope.builtin').oldfiles()<CR>",{ noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'fp',"<cmd>Telescope projects<CR>",{ noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>f',"<cmd>Telescope current_buffer_fuzzy_find<CR>",{ noremap = true, silent = true })
 
 -- 离开输入模式，自动切换成英文模式(silent 静默模式)
 vim.api.nvim_create_autocmd({ "InsertLeave" }, {
