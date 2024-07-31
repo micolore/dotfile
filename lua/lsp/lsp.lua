@@ -144,8 +144,6 @@ vim.keymap.set('n', '<leader>k', '<cmd>lua vim.lsp.buf.hover()<CR>', {})
 vim.keymap.set('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', {})
 vim.api.nvim_set_keymap('n', '<C-m>', ':lua vim.lsp.buf.format({ async = true }); vim.cmd("write")<CR>', default_opts)
 
-
-
 require("nvim-autopairs").setup()
 
 require("nvim-lastplace").setup({
@@ -217,4 +215,23 @@ vim.cmd([[
 ]])
 
 require('Comment').setup()
+
+require('nvim-test').setup {
+  run = true,                 
+  commands_create = true,     
+  filename_modifier = ":.",   
+  silent = false,             
+  term = "terminal",          
+  termOpts = {
+    direction = "vertical",   
+    width = 96,               
+    height = 24,              
+    go_back = false,          
+    stopinsert = "auto",     
+    keep_one = true,        
+  },
+  runners = {              
+    rust = "nvim-test.runners.cargo-test",
+  }
+}
 
