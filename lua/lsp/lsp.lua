@@ -144,11 +144,7 @@ vim.keymap.set('n', '<leader>k', '<cmd>lua vim.lsp.buf.hover()<CR>', {})
 vim.keymap.set('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', {})
 vim.api.nvim_set_keymap('n', '<C-m>', ':lua vim.lsp.buf.format({ async = true }); vim.cmd("write")<CR>', default_opts)
 
-require('lualine').setup({
-    options = {
-        theme = 'vscode',
-    },
-})
+
 
 require("nvim-autopairs").setup()
 

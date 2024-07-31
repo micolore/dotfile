@@ -26,3 +26,6 @@ require "search"
 -- git 
 require "git"
 
+-- linestatus
+require "linestatus"
+

@@ -74,7 +74,7 @@ bufferline.setup {
             },
 	    diagnostics = "nvim_lsp",
 	    color_icons = true,
-            max_name_length = 18,
+            max_name_length = 30,
 	    show_close_icon = false,
 	    modified_icon = '●',
 	    left_trunc_marker = '',
