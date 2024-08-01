@@ -1,18 +1,3 @@
---[[ require('lualine').setup({
-    options = {
-        theme = 'vscode',
-    },
-    sections = {
-	lualine_a = {
-	    {
-	      'filename',
-	      file_status=true,
-	      path = 1,               
-	    }
-	 }
-     }
-}) ]]
-
 local lualine = require('lualine')
 
 local colors = {
@@ -28,6 +13,7 @@ local colors = {
   blue     = '#51afef',
   red      = '#ec5f67',
 }
+
 
 local conditions = {
   buffer_not_empty = function()
@@ -147,10 +133,10 @@ ins_left {
 
 ins_left {
   'diff',
-  symbols = { added = ' ', modified = '󰝤 ', removed = ' ' },
+  symbols = { added = '☱ ', modified = '☵ ', removed = '☷ ' },
   diff_color = {
     added = { fg = colors.green },
-    modified = { fg = colors.orange },
+    modified = { fg = colors.blue },
     removed = { fg = colors.red },
   },
   cond = conditions.hide_in_width,
