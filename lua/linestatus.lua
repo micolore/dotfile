@@ -105,6 +105,23 @@ ins_left {
 }
 
 ins_left {
+  'branch',
+  icon = '',
+  color = { fg = colors.violet, gui = 'bold' },
+}
+
+ins_left {
+  'diff',
+  symbols = { added = '☱ ', modified = '☵ ', removed = '☷ ' },
+  diff_color = {
+    added = { fg = colors.green },
+    modified = { fg = colors.blue },
+    removed = { fg = colors.red },
+  },
+  cond = conditions.hide_in_width,
+}
+
+ins_left {
   'filename',
   cond = conditions.buffer_not_empty,
   color = { fg = colors.magenta, gui = 'bold' },
@@ -123,23 +140,6 @@ ins_left {
     warn = { fg = colors.yellow },
     info = { fg = colors.cyan },
   },
-}
-
-ins_left {
-  'branch',
-  icon = '',
-  color = { fg = colors.violet, gui = 'bold' },
-}
-
-ins_left {
-  'diff',
-  symbols = { added = '☱ ', modified = '☵ ', removed = '☷ ' },
-  diff_color = {
-    added = { fg = colors.green },
-    modified = { fg = colors.blue },
-    removed = { fg = colors.red },
-  },
-  cond = conditions.hide_in_width,
 }
 
 ins_right {
