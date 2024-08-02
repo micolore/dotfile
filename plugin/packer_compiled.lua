@@ -334,11 +334,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-notify",
     url = "https://github.com/rcarriga/nvim-notify"
   },
-  ["nvim-spectre"] = {
-    loaded = true,
-    path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-spectre",
-    url = "https://github.com/nvim-pack/nvim-spectre"
-  },
   ["nvim-test"] = {
     loaded = true,
     path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-test",

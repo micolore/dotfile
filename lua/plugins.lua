@@ -73,6 +73,7 @@ return packer.startup(function(use)
   use "saadparwaiz1/cmp_luasnip"                      -- Luasnip completon source
 
   -- LSP
+  use 'ethanholz/nvim-lastplace'
   use "neovim/nvim-lspconfig"                         -- Enable native LSP
   use "williamboman/nvim-lsp-installer"               -- Language server installer
   use "jose-elias-alvarez/null-ls.nvim"               -- Inject LSP diagnostics, code actions ...
@@ -122,7 +123,6 @@ return packer.startup(function(use)
 
   -- search
   use "arcticicestudio/nord-vim"
-  use "ethanholz/nvim-lastplace"
   use "ggandor/leap.nvim"
   use "ggandor/flit.nvim"
   use "phaazon/hop.nvim"
@@ -134,8 +134,8 @@ return packer.startup(function(use)
   use "f-person/git-blame.nvim"
 
   use "folke/which-key.nvim"
-  use "nvim-pack/nvim-spectre" --搜索替换
   use "ashfinal/qfview.nvim"
+  -- use "nvim-pack/nvim-spectre" --搜索替换
 
   -- theme
   use "folke/tokyonight.nvim"
