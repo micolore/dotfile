@@ -254,11 +254,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\noice.nvim",
     url = "https://github.com/folke/noice.nvim"
   },
-  ["nord-vim"] = {
-    loaded = true,
-    path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nord-vim",
-    url = "https://github.com/arcticicestudio/nord-vim"
-  },
   ["nui.nvim"] = {
     loaded = true,
     path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nui.nvim",
@@ -344,10 +339,10 @@ _G.packer_plugins = {
     path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\project.nvim",
     url = "https://github.com/ahmedkhalf/project.nvim"
   },
-  ["qfview.nvim"] = {
+  ["smart-splits.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\qfview.nvim",
-    url = "https://github.com/ashfinal/qfview.nvim"
+    path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\smart-splits.nvim",
+    url = "https://github.com/mrjones2014/smart-splits.nvim"
   },
   ["telescope-ui-select.nvim"] = {
     loaded = true,
@@ -413,11 +408,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vscode.nvim",
     url = "https://github.com/Mofiqul/vscode.nvim"
-  },
-  ["which-key.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\MOPPO-00\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\which-key.nvim",
-    url = "https://github.com/folke/which-key.nvim"
   },
   ["yankbank-nvim"] = {
     loaded = true,

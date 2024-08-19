@@ -43,6 +43,7 @@ return packer.startup(function(use)
     "ThePrimeagen/harpoon",
     branch = "harpoon2",
    }
+  use('mrjones2014/smart-splits.nvim')
 
   use 'mg979/vim-visual-multi'                        -- Multiple cursors
   use 'nvim-lualine/lualine.nvim'                     -- Easy to configure neovim statusline
@@ -113,7 +114,6 @@ return packer.startup(function(use)
   use "rcarriga/nvim-notify"
 
   -- search
-  use "arcticicestudio/nord-vim"
   use "ggandor/leap.nvim"
   use "ggandor/flit.nvim"
   use "phaazon/hop.nvim"
@@ -123,10 +123,6 @@ return packer.startup(function(use)
   use "lewis6991/gitsigns.nvim"                       -- Git integration
   use "sindrets/diffview.nvim" 
   use "f-person/git-blame.nvim"
-
-  use "folke/which-key.nvim"
-  use "ashfinal/qfview.nvim"
-  -- use "nvim-pack/nvim-spectre" --搜索替换
 
   -- theme
   use "folke/tokyonight.nvim"

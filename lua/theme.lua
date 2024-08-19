@@ -236,8 +236,6 @@ require("notify").setup({
     top_down = false 
 })
 
-require('qfview').setup()
-
 require("colorful-winsep").setup()
 
 local ft = require("cool-chunk.utils.filetype").support_filetypes
