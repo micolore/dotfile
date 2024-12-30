@@ -17,3 +17,5 @@ yum install -y neovim
 # neovim upgrade not support  must compile 
 
 # config neovim 
+
+# plug install PackerInstall 
